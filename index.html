@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <meta name="description" content="This is a Course Home Page that contains information of the student and the milestones of their career"/>
+    <meta name="author" content="Karen Mahr">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/homepage-large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Course Home Page</title>
 </head>
 <body>
-    
+    <header>
+        <img src="images/home.svg" alt="Site Logo" width="24" height="24">
+        <span>Karen Mahr´s site</span>
+        <button type="button" id="menu" aria-label="Toggle navigation menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a> </li>
+                <li><a href="#"></a>Chamber</li>
+                <li><a href="#"></a>Final</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class= "studentsection">
+            <section class="about">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget arcu ac sapien viverra ultricies. Nam eget dolor
+                diam. Fusce ut lorem ligula. Cras turpis mi, congue id fermentum quis, semper ac eros. Etiam sit amet aliquam quam.
+                Integer aliquam mauris sed varius placerat. Phasellus suscipit tellus in odio iaculis, a ultrices lacus mattis. Aliquam
+                commodo velit urna, non sodales lorem dapibus a. Praesent ante neque, consectetur varius arcu quis, ullamcorper
+                tincidunt mauris. Quisque dictum tortor non diam tempor, et tincidunt sapien sodales. Nullam vitae vehicula libero, eu
+                pellentesque velit. Proin sed nisl magna. Aenean blandit tincidunt quam ac pretium.</p>
+            </section>
+
+            <section class="photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Student Photo">
+            </section>
+        </div>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="heading3">
+                <h3>All</h3>
+                <h3>CSE</h3>
+                <h3>WDD</h3>
+            </div>
+            <div class="heading4">
+                <h4>WDD 130</h4>
+                <h4>WDD 131</h4>
+                <h4>WDD 231</h4>
+            </div>
+            <p>The total credits for course listed above is 6</p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/karenmahr"><img src="images/github.svg" alt="Git hub" width="34" height="34"></a>
+            <a href="https://github.com/karenmahr"><img src="images/linkedIn.svg" alt="LinkedIn" width="34" height="34"></a>
+            <a href="https://www.instagram.com/karenmahr/#"><img src="images/instagram.svg" alt="Instagram" width="34" height="34"></a>
+        </div>
+        <section class="footer">
+            <p>© <span id="currentyear"></span> Karen Mahr Argentina</p>
+            <p><span id="lastModified"></span></p>
+        </section>
+    </footer>
 </body>
 </html>
