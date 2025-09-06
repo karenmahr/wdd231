@@ -1,80 +1,90 @@
-:rot{
+:rot {
     --primary-color: #284B63;
     --secondary-color: #CACBCC;
-    --third-color:#E8F0F5;
+    --third-color: #E8F0F5;
 }
 
-.about{
-    background-color:#E8F0F5;
+.about {
+    background-color: #E8F0F5;
 }
-header{
-    display:grid;
+
+header {
+    display: grid;
     grid-template-columns: 24px auto 44px;
-    padding:5px 0 5px 10px;
-    border-bottom: solid 1px #ddd;
+    padding: 5px 0 5px 10px;
     column-gap: 8px;
-}
-header img{
-    display:block;
-    width:100%;
-    height:auto;
-}
-header span{
-    font-size: 1.2rem;
-    color:#284B63;
+    align-items: center;
+    height:20px;
 }
 
-h2{
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #284B63;
+}
+
+h2 {
     text-align: center;
     background-color: #284B63;
-    color:white;
+    color: white;
     border: 1px solid rgb(0, 0, 0);
 }
 
-img{
-    display:block;
+img {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
 }
-.photo{
-    background-color:#E8F0F5;
+
+.photo {
+    background-color: #E8F0F5;
 }
 
-h3{
-    background-color: #E8F0F5;  
-    border: 1px solid rgb(0, 0, 0);  
+h3 {
+    background-color: #E8F0F5;
+    border: 1px solid rgb(0, 0, 0);
     margin: 1px 0 1px 4px;
     border-radius: 10px 10px 10px 10px;
 }
 
-.heading3{
-    display:grid;
+.heading3 {
+    display: grid;
     grid-template-columns: auto auto auto;
     text-align: center;
-} 
+}
 
-h4{
+h4 {
     text-align: center;
     background-color: #E8F0F5;
     border: 1px solid rgb(0, 0, 0);
     margin: 8px 0px 8px 0px;
 }
 
-.courses{
+.courses {
     text-align: center;
 }
 
-.social{
-    display:grid;
-    grid-template-columns: auto auto auto;        
+.social {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
-footer{
-    text-align:center;
+
+footer {
+    text-align: center;
 }
-.footer{
+
+.footer {
     background-color: #E8F0F5;
 }
+
 #menu {
     float: right;
     background-color: white;
@@ -93,7 +103,6 @@ footer{
 
 .navigation a:hover,
 .navigation a:active {
-    background-color: #bbb;
     color: #284B63;
 }
 
@@ -104,16 +113,19 @@ footer{
 .navigation.open {
     display: block;
 }
+
 nav ul {
+    display:block;
     list-style: none;
+    background-color: none;
+    
 }
 
 nav a {
     text-decoration: none;
 }
-nav li{
-    background-color: #E8F0F5;
-    color:#284B63;
+
+nav li {
     font-weight: bold;
     text-align: left;
     border: 0.5px solid rgba(0, 0, 0, 0.26);
