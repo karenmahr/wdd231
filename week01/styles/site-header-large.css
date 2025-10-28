@@ -16,4 +16,14 @@
         grid-template-columns: 24px auto;
     }
 
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        li {
+			flex: 1 1 100%;
+		}
+    }
 }
