@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <link rel="stylesheet" href="week01/styles/normalize.css">
+    <link rel="stylesheet" href="week01/styles/course.css">
+    <link rel="stylesheet" href="week01/styles/course-large.css">
+    <script src="week01/scripts/date.js" defer></script>
+    <script src="week01/scripts/navigation.js" defer></script>
+    <script src="week01/scripts/course.js" defer></script>
+    <meta name="author" content="Karen Mahr">
+    <meta name="description" content="For this weeks´s assignment, I´ll create a Course Home Page">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chamber of Commerce</title>
 </head>
 
 <body>
-    hdhfd
+    <header>
+        <img src="week01/images/icon.svg" alt="Site Logo" width="24" height="24">
+        <span>The Site Name</span>
+        <button id="nav-button" class="hamburguer" aria-label="navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="first">
+            <h2>About Me</h2>
+            <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquam neque non erat congue porta. Aliquam enim enim,
+            interdum eu tellus eu, convallis blandit quam. Fusce maximus mauris efficitur facilisis volutpat. Aliquam erat volutpat.
+            Sed eget ornare ex. Donec mollis tincidunt lacinia. Suspendisse potenti. Proin mauris tellus, tincidunt in mattis et,
+            hendrerit at lorem. Quisque laoreet odio et nisl mattis, quis ultrices tortor convallis.</p>
+        </section>
+
+        <section class="second">
+            <h2>Student Photo</h2>
+            <img src="week01/images/student.webp" alt="Student Photo">
+        </section>
+
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div class="certificateType">
+                <p>All</p>
+                <p>CSE</p>
+                <p>WDD</p>
+            </div>
+            <div class="certificateName">
+                <p>WDD 130</p>
+                <p>WDD 131</p>
+                <p>WDD 231</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/karenmahr" target="_blank"><img src="week01/images/github.svg" alt="Github" width="512"
+                    height="512"></a>
+            <a href="https://www.linkedin.com/in/karen-mahr/" target="_blank"><img src="week01/images/linkedin.svg"
+                    alt="Linkedin" width="512" height="512"></a>
+            <a href="https://www.facebook.com/karen.mahr/?locale=es_LA" target="_blank"><img src="week01/images/facebook.svg"
+                    alt="Facebook" width="512" height="512"></a>
+            <a href="https://www.instagram.com/karenmahr/" target="_blank"><img src="week01/images/instagram.svg"
+                    alt="Instagram" width="512" height="512"></a>
+        </div>
+        <p>© <span id="currentyear"></span> Karen Mahr Argentina</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
 </body>
 
 </html>

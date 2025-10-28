@@ -1,0 +1,174 @@
+:root {
+    ---primary-color: #63728E;
+    ---secondary-color: #f7e7ce;
+    ---third-color: #6A2B3F;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #63728E;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #63728E;
+}
+
+.hamburguer {
+    background: none;
+    border: none;
+    color: #63728E;
+    cursor: pointer
+}
+
+.hamburguer::before {
+    content: "\2630";
+}
+
+.hamburguer.show::before {
+    content: "\00D7"
+}
+
+.navigation {
+    display: none;
+    background-color: #f7e7ce96;
+}
+
+.navigation.show {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #63728E;
+    text-align: center;
+    padding: 1rem;
+    display: block;
+}
+
+& a:hover {
+    text-decoration: overline;
+}
+
+.active {
+    color: #6A2B3F;
+}
+
+footer {
+    background-color: #f7e7ce96;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    column-gap: 12px;
+    justify-content: center;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #63728e54 solid 1px;
+    width: 15px;
+    height: 15px;
+    border-radius: 6px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #f7e7ce;
+}
+
+main{
+    margin:.5rem;
+}
+
+h1{
+    margin:0;
+    color:#63728E
+}
+
+h2{
+    background-color: #6A2B3F;
+    color:#f7e7ce;
+    text-align: center;
+    padding:.3rem;
+    margin:0;
+}
+
+section{
+    border-top: solid 14px white;
+}
+
+.first,
+.second{
+    background-color: #f7e7ce;
+}
+
+#text{
+    margin: 0;
+    padding:.5rem;
+
+}
+
+.second{
+    text-align: center;
+}
+
+section img{
+    width: 290px;
+    height:auto;
+    padding:.7rem;
+    border-radius: 15px;
+}
+
+.certificateType{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 15px;
+}
+
+.certificateType p{
+    background-color: #63728E;
+    color:white;
+    border-radius: 6px;
+    justify-content: center;
+    padding:.6rem;
+    text-align: center;
+    border:solid 1px black;
+    margin: 5px 0;
+}
+
+.certificateName{
+    margin: 2px 0;
+}
+
+.certificateName p{
+    background-color: #63728E;
+    color: white;
+    padding:.3rem;
+    text-align: center;
+    border: solid 1px black;
+    margin: 5px 0;
+}
