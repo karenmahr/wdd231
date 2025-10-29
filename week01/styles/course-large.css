@@ -4,7 +4,7 @@
     main,
     nav,
     footer {
-        max-width: 900px;
+        max-width: 800px;
         margin: 0 auto;
     }
 
@@ -26,5 +26,17 @@
         li {
             flex: 1 1 100%;
         }
+    }
+
+    .container{
+        display:grid;
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+    }
+
+    .certificateName {
+        display: grid;
+        grid-template-columns: 240px 250px auto;
+        column-gap: 15px;
     }
 }

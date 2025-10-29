@@ -11,6 +11,10 @@
     <meta name="description" content="For this weeks´s assignment, I´ll create a Course Home Page">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Chamber of Commerce</title>
 </head>
 
@@ -31,25 +35,26 @@
 
     <main>
         <h1>Home</h1>
+        <div class="container">
+            <section class="first">
+                <h2>About Me</h2>
+                <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquam neque non erat congue porta. Aliquam enim enim,
+                interdum eu tellus eu, convallis blandit quam. Fusce maximus mauris efficitur facilisis volutpat. Aliquam erat volutpat.
+                Sed eget ornare ex. Donec mollis tincidunt lacinia. Suspendisse potenti. Proin mauris tellus, tincidunt in mattis et,
+                hendrerit at lorem. Quisque laoreet odio et nisl mattis, quis ultrices tortor convallis.</p>
+            </section>
 
-        <section class="first">
-            <h2>About Me</h2>
-            <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquam neque non erat congue porta. Aliquam enim enim,
-            interdum eu tellus eu, convallis blandit quam. Fusce maximus mauris efficitur facilisis volutpat. Aliquam erat volutpat.
-            Sed eget ornare ex. Donec mollis tincidunt lacinia. Suspendisse potenti. Proin mauris tellus, tincidunt in mattis et,
-            hendrerit at lorem. Quisque laoreet odio et nisl mattis, quis ultrices tortor convallis.</p>
-        </section>
-
-        <section class="second">
-            <h2>Student Photo</h2>
-            <img src="week01/images/student.webp" alt="Student Photo">
-        </section>
+            <section class="second">
+                <h2>Student Photo</h2>
+                <img src="week01/images/student.webp" alt="Student Photo">
+            </section>
+        </div>
 
         <section>
             <h2>Web Certificate Courses</h2>
             <div class="certificateType">
                 <p>All</p>
-                <p>CSE</p>
+                <p id="CSE">CSE</p>
                 <p>WDD</p>
             </div>
             <div class="certificateName">
@@ -57,7 +62,6 @@
                 <p>WDD 131</p>
                 <p>WDD 231</p>
             </div>
-
         </section>
     </main>
 
@@ -75,6 +79,7 @@
         <p>© <span id="currentyear"></span> Karen Mahr Argentina</p>
         <p><span id="lastModified"></span></p>
     </footer>
+
 </body>
 
 </html>

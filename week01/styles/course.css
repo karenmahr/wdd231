@@ -4,6 +4,10 @@
     ---third-color: #6A2B3F;
 }
 
+*{
+    font-family:"Roboto", sans-serif;
+}
+
 header {
     display: grid;
     grid-template-columns: 24px auto 44px;
@@ -137,7 +141,7 @@ section{
 }
 
 section img{
-    width: 290px;
+    width: 250px;
     height:auto;
     padding:.7rem;
     border-radius: 15px;
