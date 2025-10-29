@@ -80,10 +80,30 @@ const courses = [
 
 const CSElink = document.querySelector("#CSE");
 CSElink.addEventListener("click", () => {
-    courses.filter(course => course.subject === 'CSE');
-    setFilter("CSE");
+    const CSEcourses= courses.filter(course => course.subject === 'CSE');
+    render(CSEcourses);
 });
 
-let WDD = courses.filter(course => courses.subject === 'WDD');
+const WDDlink = document.querySelector("#WDD");
+WDDlink.addEventListener("click", () => {
+    const WDDcourses = courses.filter(course => course.subject === 'WDD');
+    render(WDDcourses);
+});
 
-let All = courses.filter(course => courses.subject === 'WDD','CSE');
+const AllLink = document.querySelector("#All");
+AllLink.addEventListener("click", () => {
+        render(courses);
+});
+
+
+function render(coursesArray) {
+    const container = document.querySelector("#courseContainer");
+    
+    container.innerHTML = "";
+
+    coursesArray.forEach(function (element) {
+        const courseItem = document.createElement("p");
+        courseItem.textContent = `${element.subject} ${element.number}`;
+        container.appendChild(courseItem);
+    });
+};
