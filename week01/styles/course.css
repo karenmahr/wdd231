@@ -59,7 +59,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #63728E;
+    color: #373f4e;
     text-align: center;
     padding: 1rem;
     display: block;
@@ -114,8 +114,8 @@ h1{
 }
 
 h2{
-    background-color: #6A2B3F;
-    color:#f7e7ce;
+    background-color: #63728E;
+    color:white;
     text-align: center;
     padding:.3rem;
     margin:0;
@@ -127,13 +127,13 @@ section{
 
 .first,
 .second{
-    background-color: #f7e7ce;
+    background-color: #f7e7ce96;
+    border-bottom: 10px solid white;
 }
 
 #text{
     margin: 0;
     padding:.5rem;
-
 }
 
 .second{
@@ -164,15 +164,41 @@ section img{
     margin: 5px 0;
 }
 
-.certificateName{
+.certificateType{
     margin: 2px 0;
 }
 
-.certificateName p{
-    background-color: #63728E;
+button{
+    background-color: #f7e7ce;
     color: white;
+    background: radial-gradient(#6A2B3F, #f7e7ce);
     padding:.3rem;
     text-align: center;
     border: solid 1px black;
     margin: 5px 0;
 }
+
+.courseCard.incomplete,
+.courseCard.completed {
+    color: white;
+    padding: .3rem;
+    text-align: center;
+    border: solid 1px black;
+    margin: 5px 0;
+}
+
+.courseCard.completed{
+    background-Color:#6A2B3F;
+}
+
+.courseCard.incomplete{
+    background-color: #63728ed0;
+}
+
+#courses{
+    background-color: #f7e7ce96;
+    color:#6A2B3F;
+    border: solid 1px #63728E; 
+}
+
+

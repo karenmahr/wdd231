@@ -102,8 +102,17 @@ function render(coursesArray) {
     container.innerHTML = "";
 
     coursesArray.forEach(function (element) {
-        const courseItem = document.createElement("p");
-        courseItem.textContent = `${element.subject} ${element.number}`;
+        const courseItem = document.createElement("div");
+        courseItem.classList.add("courseCard");
+
+        if (element.completed) {
+            courseItem.textContent = `✔ ${element.subject} ${element.number}`;
+            courseItem.classList.add("completed");
+        } else {
+            courseItem.textContent = `${element.subject} ${element.number}`;
+            courseItem.classList.add("incomplete");
+        }
+
         container.appendChild(courseItem);
     });
 };
