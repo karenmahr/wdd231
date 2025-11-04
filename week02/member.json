@@ -1,0 +1,20 @@
+{
+    "new-member":{
+        "family_name": "Gomez",
+        "moving_date": "11-3-2025",
+        "household_number": 2,
+        "bishopric_visit":true,
+        "family_member":[
+            {
+            "name":"Yamila",
+            "gender": "female",
+            "birthday":"10/2/1995"
+        },
+        {
+            "name": "Ernesto",
+            "gender": "male",
+            "birthday": "10/2/1990"
+        }
+        ]
+    }
+}
