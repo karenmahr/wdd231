@@ -1,9 +1,9 @@
-const url = "";
+const url = 'data/members.json';
 
 const cards = document.querySelector('#cards');
 
 async function getMemberData() {
-    const response = await fetch();
+    const response = await fetch(url);
     const data = await response.json();
     displayMembers(data.members);
 }
@@ -21,12 +21,12 @@ const displayMembers = (members) =>
         image.setAttribute("alt", members.name);
         image.setAttribute("loading", "lazy");
         image.setAttribute('width', '340');
-        image.setAttribute('height', '440');
+        image.setAttribute('height', '440'); 
 
-        card.appendChild(image);
-        card.appendChild(address);
-        card.appendChild(phonenumber);
-        card.appendChild(website);
+        card.appendChild(image)
+        card.appendChild(address)
+        card.appendChild(phonenumber)
+        card.appendChild(website)
 
-        cards.appendChild(card); 
-    })
+        cards.appendChild(card);
+    });
