@@ -1,57 +1,56 @@
-{
-    "companies":[
+{"members":[
     {
         "name":"Indio Lera",
-        "address":"Florida Buenos Aires AR, Gral. Juan Lavalle 1525, B1602 Vicente López",
-        "phonenumber":1535896321,
+        "address":"Gral. Juan Lavalle 1525, Florida, Bs.As.",
+        "phonenumber":"(15) 3589-6321",
         "website":"https://indiolera.com/",
         "imageurl":"images/indiolera.png",
         "membershiplevel":1
     },
     {
         "name": "Maxikiosko La cuque",
-        "address": "Gral. M. Miguel de Güemes 1786, B1602DUD Florida, Provincia de Buenos Aires",
-        "phonenumber":1587459632,
+        "address": "Gral. M. Miguel de Güemes 1786, Florida, Bs.As.",
+        "phonenumber":"(15) 8745-9632",
         "website": "https://lacuque.com/",
         "imageurl": "images/lacuque.png",
         "membershiplevel": 2
     },
     {
         "name": "Cotillon Libur",
-        "address": "una ciudad, Gral Heras 1965 Vicente Lopez Buenos Aires AR, 1638 Selecciona",
-        "phonenumber":1585296374,
+        "address": "Gral Heras 1965 Vicente Lopez, Bs.As.",
+        "phonenumber":"(15) 8529-6374",
         "website": "https://libur.com/",
         "imageurl": "images/libur.png",
         "membershiplevel": 3
     },
     {
         "name": "Peluqueria Rosado",
-        "address": "Av. Maipú 410, B1602BWA Florida, Provincia de Buenos Aires",
-        "phonenumber":1514725836 ,
+        "address": "Av. Maipú 410, Florida, Bs.As.",
+        "phonenumber":"(15)1472-5836" ,
         "website": "https://remix.com/",
         "imageurl": "images/rosado.png",
         "membershiplevel": 1
     },
     {
         "name": "Libreria El Castillo Viejo",
-        "address": "Av. Maipú 100 B, B1638 Florida, Provincia de Buenos Aires",
-        "phonenumber":1545678912 ,
+        "address": "Av. Maipú 100 B, Florida, Bs.As.",
+        "phonenumber":"(15) 4567-8912" ,
         "website": "https://castilloviejo.com/",
         "imageurl": "images/libreria.png",
         "membershiplevel": 2
     },
     {
         "name": "Los tejidos",
-        "address": "Adolfo Alsina 789, B1638CQN Vicente López, Provincia de Buenos Aires",
-        "phonenumber": 1598765421,
+        "address": "Adolfo Alsina 789, Vicente López, Bs.As.",
+        "phonenumber": "(15) 9876-5421",
         "website": "https://lostejidos.com/",
         "imageurl": "images/lostejidos.png",
         "membershiplevel": 3
     },
     {
         "name": "Vivero Luna Llena",
-        "address": "Aristóbulo del Valle 2587, B1638 Vicente López, Provincia de Buenos Aires",
-        "phonenumber":1515926348 ,
+        "address": "Aristóbulo del Valle 2587, Vicente López, Bs.As.",
+        "phonenumber":"(15) 1592-6348" ,
         "website": "https://viverolunallena.com/",
         "imageurl": "images/lunallena.png",
         "membershiplevel": 1

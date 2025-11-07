@@ -17,8 +17,15 @@ const displayMembers = (members) =>
         let phonenumber = document.createElement("p");
         let website = document.createElement("p");
 
+        address.textContent = member.address;
+        address.classList.add("address");
+        phonenumber.textContent = member.phonenumber;
+        phonenumber.classList.add("phonenumber");
+        website.innerHTML = member.website;
+        website.classList.add("website");
+
         image.setAttribute("src", member.imageurl);
-        image.setAttribute("alt", members.name);
+        image.setAttribute("alt", member.name);
         image.setAttribute("loading", "lazy");
         image.setAttribute('width', '340');
         image.setAttribute('height', '440'); 
@@ -30,3 +37,28 @@ const displayMembers = (members) =>
 
         cards.appendChild(card);
     });
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("#cards");
+
+gridbutton.addEventListener("click", () => {
+    // example using arrow function
+    display.classList.add("grid");
+    display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+    display.classList.add("list");
+    display.classList.remove("grid");
+};
+
+const today = new Date();
+
+const currentYearSpan = document.querySelector("#currentyear");
+currentYearSpan.textContent = today.getFullYear();
+
+const lastModified = document.querySelector("#lastModified");
+lastModified.textContent = `Last modified: ${document.lastModified}`;
