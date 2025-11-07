@@ -23,4 +23,50 @@
         display: flex;
         justify-content: space-around;
     }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-gap: 5px;
+        align-items: center;
+    }
+    
+    button:hover {
+        background-color: #6a2b3f1e;
+    }
+
+    section{
+        font-size: 0.75rem;
+    }
+    
+    
+    
+    .website,
+    .phonenumber,
+    .address {
+        padding: 0.2rem;
+    }
+    
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .list section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+        height: 2rem;
+        box-shadow: none;
+        text-align: start;
+    }
+    
+    .list img {
+        display: none;
+    }
+    
+    .list section:nth-child(even) {
+        background-color: #7dfff23a;
+    }
 }

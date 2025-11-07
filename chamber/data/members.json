@@ -4,7 +4,7 @@
         "address":"Gral. Juan Lavalle 1525, Florida, Bs.As.",
         "phonenumber":"(15) 3589-6321",
         "website":"https://indiolera.com/",
-        "imageurl":"images/indiolera.png",
+        "imageurl":"images/veterinaria.png",
         "membershiplevel":1
     },
     {
@@ -20,7 +20,7 @@
         "address": "Gral Heras 1965 Vicente Lopez, Bs.As.",
         "phonenumber":"(15) 8529-6374",
         "website": "https://libur.com/",
-        "imageurl": "images/libur.png",
+        "imageurl": "images/cotillon.png",
         "membershiplevel": 3
     },
     {
@@ -52,7 +52,7 @@
         "address": "Aristóbulo del Valle 2587, Vicente López, Bs.As.",
         "phonenumber":"(15) 1592-6348" ,
         "website": "https://viverolunallena.com/",
-        "imageurl": "images/lunallena.png",
+        "imageurl": "images/vivero.png",
         "membershiplevel": 1
     }
 ]

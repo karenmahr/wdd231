@@ -114,12 +114,12 @@ main {
     margin: 1rem auto;
     padding: 0.5rem;
     text-align: center;
-}    
-
+}
+    
 .menu button {
     padding: 0.5rem 1rem;
     font-weight: 700;
-    color:#6A2B3F;
+    color: #6A2B3F;
     background-color: white;
     border: #6A2B3F solid 1px;
     border-radius: 10%;
@@ -131,34 +131,17 @@ section {
     padding: 0.7rem;
     margin: 0.1rem;
     text-align: center;
-    height:12rem;
-    font-size: 0.75rem;
-}    
-
-.grid {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-gap: 5px;
-    align-items: center;
-}
-
-button:hover{
-    background-color: #6a2b3f1e;
+    height: 12rem;
 }
 
 img {
     width: auto;
     height: 90px;
 }
+
 .website {
     color: #0000FF;
     text-decoration: underline;
-    
-}
-.website,
-.phonenumber,
-.address{
-    padding:0.2rem;
 }
 
 

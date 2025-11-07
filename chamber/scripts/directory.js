@@ -43,12 +43,11 @@ const listbutton = document.querySelector("#list");
 const display = document.querySelector("#cards");
 
 gridbutton.addEventListener("click", () => {
-    // example using arrow function
     display.classList.add("grid");
     display.classList.remove("list");
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
+listbutton.addEventListener("click", showList); 
 
 function showList() {
     display.classList.add("list");
