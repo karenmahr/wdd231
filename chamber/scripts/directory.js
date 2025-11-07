@@ -19,8 +19,10 @@ const displayMembers = (members) =>
 
         address.textContent = member.address;
         address.classList.add("address");
+
         phonenumber.textContent = member.phonenumber;
         phonenumber.classList.add("phonenumber");
+
         website.innerHTML = member.website;
         website.classList.add("website");
 
@@ -53,6 +55,15 @@ function showList() {
     display.classList.add("list");
     display.classList.remove("grid");
 };
+
+const navButton = document.querySelector('#nav-button');
+
+navButton.addEventListener('click', () => {
+    navButton.classList.toggle('show');
+    navBar.classList.toggle('show');
+});
+
+const navBar = document.querySelector('#nav-bar');
 
 const today = new Date();
 

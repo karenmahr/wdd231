@@ -9,7 +9,7 @@
     },
     {
         "name": "Maxikiosko La cuque",
-        "address": "Gral. M. Miguel de Güemes 1786, Florida, Bs.As.",
+        "address": "Miguel de Güemes 1786, Florida, Bs.As.",
         "phonenumber":"(15) 8745-9632",
         "website": "https://lacuque.com/",
         "imageurl": "images/lacuque.png",
@@ -49,7 +49,7 @@
     },
     {
         "name": "Vivero Luna Llena",
-        "address": "Aristóbulo del Valle 2587, Vicente López, Bs.As.",
+        "address": "Aristóbulo 2587, Vicente López, Bs.As.",
         "phonenumber":"(15) 1592-6348" ,
         "website": "https://viverolunallena.com/",
         "imageurl": "images/vivero.png",

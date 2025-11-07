@@ -31,7 +31,7 @@
         align-items: center;
     }
     
-    button:hover {
+    .menu button:hover {
         background-color: #6a2b3f1e;
     }
 
