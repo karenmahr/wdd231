@@ -114,7 +114,6 @@ main {
 
 section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.301);
-    margin: 0;
     padding: 0.7rem;
     margin: 0.1rem;
     text-align: center;
@@ -129,6 +128,11 @@ img {
 .website {
     color: #0000FF;
     text-decoration: underline;
+}
+
+h1{
+    color:#63728E;
+    font-size:x-large;
 }
 
 
