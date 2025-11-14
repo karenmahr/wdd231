@@ -87,7 +87,7 @@ footer {
 }
 
 .social a {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     border: #63728e54 solid 1px;

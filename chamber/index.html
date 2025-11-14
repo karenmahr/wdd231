@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="author" content="Karen Mahr">
+    <meta name="description"
+        content="This site is a chamber of commerce. It´s purpose is to work between the business interest of the group and have a strong network that strengthens the community">
+    <link rel="icon" href="/images/favicon.ico">
+
+
+    <meta property="og:title" content="Facebook">
+    <meta property="og:description" content="In this page you can connect with friends, shop and share moments of your life. Explore and discover everything Facebook has to offer.
+            .">
+    <meta property="og:image" content="images/facebook.png" />
+    <meta property="og:url" content="https://karenmahr.github.io/wdd231/chamber/images/facebook.png">
+
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <script src="scripts/home.js" defer></script>
+
+    <title>Directory .</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="24" height="24">
+        <span>The Site Name</span>
+        <button id="nav-button" class="hamburguer" aria-label="navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+
+    <img src="images/hero.jpg" alt="Shopping" id="hero-image">
+
+    <main>
+        <h1>Home</h1>
+        <div class="weather">
+            <h2>Current Weather</h2>
+            
+            <div id="figure">
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption id="description"></figcaption>
+                </figure>
+            </div>
+
+            <div id="current">
+                <p><span id="current-temp"></span></p>
+                <p>High: <span id="high-temp"></span></p>
+                <p>Low: <span id="low-temp"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Sunrise: <span id="sunrise"></span></p>
+                <p>Sunset: <span id="sunset"></span></p>
+            </div>
+            
+        </div>
+
+            <div id="forecast">
+                <h2>Weather Forecast</h2>
+                <p>Today: <span id="today"></span></p>
+                <p>Wednesday: <span id="wednesday"></span></p>
+                <p>Thursday: <span id="thursday"></span></p>
+            </div>
+        </div>
+        <div id="cards">
+            <div class="menu">
+                <button id="grid">Grid</button>
+                <button id="list">List</button>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/karenmahr" target="_blank"><img src="images/github.svg" alt="Github" width="512"
+                    height="512"></a>
+            <a href="https://www.linkedin.com/in/karen-mahr/" target="_blank"><img src="images/linkedin.svg"
+                    alt="Linkedin" width="512" height="512"></a>
+            <a href="https://www.facebook.com/karen.mahr/?locale=es_LA" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="512" height="512"></a>
+            <a href="https://www.instagram.com/karenmahr/" target="_blank"><img src="images/instagram.svg"
+                    alt="Instagram" width="512" height="512"></a>
+        </div>
+        <p>© <span id="currentyear"></span> Karen Mahr Argentina</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
