@@ -2,12 +2,18 @@ const url = 'data/members.json';
 
 const cards = document.querySelector('#cards');
 
-async function getMemberData() {
+async function spotlight() {
     const response = await fetch(url);
     const data = await response.json();
-    displayMembers(data.members);
+    const randomMembers = getRandomMembers(data.members, 3);
+    displayMembers(randomMembers);
 }
-getMemberData();
+spotlight();
+
+function getRandomMembers(members, count) {
+    const shuffled = members.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
 
 const displayMembers = (members) =>
     members.forEach((member) => {
@@ -140,10 +146,10 @@ async function apiFetchForecast() {
 }
 
 function displayForecast(data) {
-    forecast.innerHTML = data.list[0].main.temp;
-    wednesday.innerHTML = data.list[1].main.temp;
-    thursday.innerHTML = data.list[2].main.temp;
-}
+    forecast.innerHTML = `${data.list[0].main.temp}°C`;
+    wednesday.innerHTML = `${data.list[1].main.temp}°C`;
+    thursday.innerHTML = `${data.list[2].main.temp}°C`};
 
 
 apiFetchForecast();
+

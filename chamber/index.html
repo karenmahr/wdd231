@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="styles/home-large.css">
     <script src="scripts/home.js" defer></script>
 
-    <title>Directory .</title>
+    <title>Home .</title>
 </head>
 
 <body>
@@ -42,31 +42,37 @@
             <li><a href="#">Final</a></li>
         </ul>
     </nav>
-
-    <img src="images/hero.jpg" alt="Shopping" id="hero-image">
+    <div class="hero">
+        <img src="images/hero.jpg" alt="Shopping" id="hero-image">
+        <button id="join">Join now!</button>
+    </div>
 
     <main>
         <h1>Home</h1>
-        <div class="weather">
-            <h2>Current Weather</h2>
-            
-            <div id="figure">
-                <figure>
-                    <img id="weather-icon" src="" alt="">
-                    <figcaption id="description"></figcaption>
-                </figure>
+        <div class="section">
+            <div class="events">
+                <h2>Events</h2>
             </div>
+            <div class="weather">
+                <h2>Current Weather</h2>
 
-            <div id="current">
-                <p><span id="current-temp"></span></p>
-                <p>High: <span id="high-temp"></span></p>
-                <p>Low: <span id="low-temp"></span></p>
-                <p>Humidity: <span id="humidity"></span></p>
-                <p>Sunrise: <span id="sunrise"></span></p>
-                <p>Sunset: <span id="sunset"></span></p>
+                <div id="figure">
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                    </figure>
+                </div>
+
+                <div id="current">
+                    <p><span id="current-temp"></span></p>
+                    <figcaption id="description"></figcaption>
+                    <p>High: <span id="high-temp"></span></p>
+                    <p>Low: <span id="low-temp"></span></p>
+                    <p>Humidity: <span id="humidity"></span></p>
+                    <p>Sunrise: <span id="sunrise"></span></p>
+                    <p>Sunset: <span id="sunset"></span></p>
+                </div>
+
             </div>
-            
-        </div>
 
             <div id="forecast">
                 <h2>Weather Forecast</h2>
@@ -75,6 +81,7 @@
                 <p>Thursday: <span id="thursday"></span></p>
             </div>
         </div>
+
         <div id="cards">
             <div class="menu">
                 <button id="grid">Grid</button>
@@ -82,7 +89,7 @@
             </div>
         </div>
     </main>
-    
+
 
     <footer>
         <div class="social">

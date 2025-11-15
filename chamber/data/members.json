@@ -5,7 +5,7 @@
         "phonenumber":"(15) 3589-6321",
         "website":"https://indiolera.com/",
         "imageurl":"images/veterinaria.png",
-        "membershiplevel":1
+        "membershiplevel":"Gold"
     },
     {
         "name": "Maxikiosko La cuque",
@@ -13,7 +13,7 @@
         "phonenumber":"(15) 8745-9632",
         "website": "https://lacuque.com/",
         "imageurl": "images/lacuque.png",
-        "membershiplevel": 2
+        "membershiplevel": "Silver"
     },
     {
         "name": "Cotillon Libur",
@@ -21,7 +21,7 @@
         "phonenumber":"(15) 8529-6374",
         "website": "https://libur.com/",
         "imageurl": "images/cotillon.png",
-        "membershiplevel": 3
+        "membershiplevel": "Gold"
     },
     {
         "name": "Peluqueria Rosado",
@@ -29,7 +29,7 @@
         "phonenumber":"(15)1472-5836" ,
         "website": "https://remix.com/",
         "imageurl": "images/rosado.png",
-        "membershiplevel": 1
+        "membershiplevel": "Silver"
     },
     {
         "name": "Libreria El Castillo Viejo",
@@ -37,7 +37,7 @@
         "phonenumber":"(15) 4567-8912" ,
         "website": "https://castilloviejo.com/",
         "imageurl": "images/libreria.png",
-        "membershiplevel": 2
+        "membershiplevel": "Gold"
     },
     {
         "name": "Los tejidos",
@@ -45,7 +45,7 @@
         "phonenumber": "(15) 9876-5421",
         "website": "https://lostejidos.com/",
         "imageurl": "images/lostejidos.png",
-        "membershiplevel": 3
+        "membershiplevel": "Silver"
     },
     {
         "name": "Vivero Luna Llena",
@@ -53,7 +53,7 @@
         "phonenumber":"(15) 1592-6348" ,
         "website": "https://viverolunallena.com/",
         "imageurl": "images/vivero.png",
-        "membershiplevel": 1
+        "membershiplevel": "Gold"
     }
 ]
 }
