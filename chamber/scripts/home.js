@@ -118,7 +118,7 @@ async function apiFetchWeather() {
 function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp}°C`;
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    weatherIcon.setAttribute('SRC', iconsrc);
+    weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', data.weather[0].description);
     captionDesc.textContent = data.weather[0].description;
     highTemp.innerHTML = `${data.main.temp_max}°C`;
