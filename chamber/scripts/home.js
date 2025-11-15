@@ -22,6 +22,7 @@ const displayMembers = (members) =>
         let address = document.createElement("p");
         let phonenumber = document.createElement("p");
         let website = document.createElement("p");
+        let membershiplevel = document.createElement("p");
 
         address.textContent = member.address;
         address.classList.add("address");
@@ -32,6 +33,10 @@ const displayMembers = (members) =>
         website.innerHTML = member.website;
         website.classList.add("website");
 
+        membershiplevel.innerHTML = member.membershiplevel;
+        membershiplevel.textContent = `Membership Level: ${member.membershiplevel}`;
+        membershiplevel.classList.add("membershiplevel");
+        
         image.setAttribute("src", member.imageurl);
         image.setAttribute("alt", member.name);
         image.setAttribute("loading", "lazy");
@@ -42,6 +47,7 @@ const displayMembers = (members) =>
         card.appendChild(address)
         card.appendChild(phonenumber)
         card.appendChild(website)
+        card.appendChild(membershiplevel)
 
         cards.appendChild(card);
     });
