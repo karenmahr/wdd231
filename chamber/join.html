@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="author" content="Karen Mahr">
+    <meta name="description"
+        content="This site is a chamber of commerce. It´s purpose is to work between the business interest of the group and have a strong network that strengthens the community">
+    <link rel="icon" href="/images/favicon.ico">
+
+
+    <meta property="og:title" content="Facebook">
+    <meta property="og:description" content="In this page you can connect with friends, shop and share moments of your life. Explore and discover everything Facebook has to offer.
+            .">
+    <meta property="og:image" content="https://karenmahr.github.io/wdd231/chamber/images/facebook.png" />
+    <meta property="og:url" content="https://karenmahr.github.io/wdd231/chamber/index.html">
+
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <script src="scripts/join.js" defer></script>
+
+    <title>Vicente Lopez Chamber of Commerce</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="24" height="24">
+        <span>Chamber of Commerce</span>
+        <button id="nav-button" class="hamburguer" aria-label="navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="https://karenmahr.github.io/wdd231/chamber/index.html">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="https://karenmahr.github.io/wdd231/chamber/directory.html">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form methos="get" action="thankyou.html">
+            <fieldset>
+                <legend>First Name</legend>
+                <label><input type="text" id="first" name="first" autocomplete="given-name" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Last Name</legend>
+                <label><input type="text" id="last" name="last" autocomplete="family-name" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Organizational Title</legend>
+                <label><input type="textarea" id="title" name="title"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Email address</legend>
+                <label><input type="email" id="email" name="email" autocomplete="email" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Mobile Phone Number</legend>
+                <label><input type="telephone" id="phone" name="phone" autocomplete="tel" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business/Organization's Name</legend>
+                <label><input type="text" id="last" name="last" autocomplete="organization" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label><input type="radio" id="np" name="membership">NP Membership is for non profit organizations and there is no fee (np)</label>
+                <label><input type="radio" id="bronze" name="membership">Bronze Membership (bronze)</label>
+                <label><input type="radio" id="silver" name="membership">Silver Membership (silver)</label>
+                <label><input type="radio" id="gold" name="membership">Gold Membership (gold)</label>
+            </fieldset>
+            <fieldset>
+                <legend>Description</legend>
+                <label><input type="textarea" id="description" name="description"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Timestamp</legend>
+                <label><input type="hidden" id="timestamp" name="timestamp"></label>
+            </fieldset>
+            <bbutton type="submit" value="Submit"></bbutton>
+        </form>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/karenmahr" target="_blank"><img src="images/github.svg" alt="Github" width="512"
+                    height="512"></a>
+            <a href="https://www.linkedin.com/in/karen-mahr/" target="_blank"><img src="images/linkedin.svg"
+                    alt="Linkedin" width="512" height="512"></a>
+            <a href="https://www.facebook.com/karen.mahr/?locale=es_LA" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="512" height="512"></a>
+            <a href="https://www.instagram.com/karenmahr/" target="_blank"><img src="images/instagram.svg"
+                    alt="Instagram" width="512" height="512"></a>
+        </div>
+        <p>© <span id="currentyear"></span> Karen Mahr Argentina</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
