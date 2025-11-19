@@ -1,0 +1,31 @@
+@media only screen and (min-width:38rem) {
+    #hero-image {
+        width: 100%;
+        height: auto;
+    }
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .hamburguer {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-around;
+    }
+}
