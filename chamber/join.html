@@ -45,48 +45,58 @@
     </nav>
 
     <main>
-        <form methos="get" action="thankyou.html">
+        <h1>Join</h1>
+        <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>First Name</legend>
-                <label><input type="text" id="first" name="first" autocomplete="given-name" required></label>
+                <label><input type="text" id="first" name="firstName" autocomplete="given-name" required></label>
             </fieldset>
             <fieldset>
                 <legend>Last Name</legend>
-                <label><input type="text" id="last" name="last" autocomplete="family-name" required></label>
+                <label><input type="text" id="last" name="lastName" autocomplete="family-name" required></label>
             </fieldset>
             <fieldset>
                 <legend>Organizational Title</legend>
-                <label><input type="textarea" id="title" name="title"></label>
+                <label><input type="text" id="title" name="title"></label>
             </fieldset>
             <fieldset>
                 <legend>Email address</legend>
-                <label><input type="email" id="email" name="email" autocomplete="email" required></label>
+                <label><input type="email" id="email" name="emailAddress" autocomplete="email" required></label>
             </fieldset>
             <fieldset>
                 <legend>Mobile Phone Number</legend>
-                <label><input type="telephone" id="phone" name="phone" autocomplete="tel" required></label>
+                <label><input type="tel" id="phone" name="phoneNumber" autocomplete="tel" required></label>
             </fieldset>
             <fieldset>
                 <legend>Business/Organization's Name</legend>
-                <label><input type="text" id="last" name="last" autocomplete="organization" required></label>
+                <label><input type="text" id="organization" name="organizationName" autocomplete="organization" required></label>
             </fieldset>
-            <fieldset>
+            <fieldset class="radio">
                 <legend>Membership Level</legend>
-                <label><input type="radio" id="np" name="membership">NP Membership is for non profit organizations and there is no fee (np)</label>
-                <label><input type="radio" id="bronze" name="membership">Bronze Membership (bronze)</label>
-                <label><input type="radio" id="silver" name="membership">Silver Membership (silver)</label>
-                <label><input type="radio" id="gold" name="membership">Gold Membership (gold)</label>
+                <label><input type="radio" id="np" name="membership">NP Membership is for non profit organizations and there is no fee (np)
+                <button id="openButton1">Learn more</button></label>
+                <label><input type="radio" id="bronze" name="membership">Bronze Membership (bronze)
+                <button id="openButton2">Learn more</button></label>
+                <label><input type="radio" id="silver" name="membership">Silver Membership (silver)
+                <button id="openButton3">Learn more</button></label>
+                <label><input type="radio" id="gold" name="membership">Gold Membership (gold)
+                <button id="openButton4">Learn more</button></label>
             </fieldset>
             <fieldset>
                 <legend>Description</legend>
-                <label><input type="textarea" id="description" name="description"></label>
+                <label><input type="text" id="description" name="description"></label>
             </fieldset>
-            <fieldset>
+            <!-- <fieldset>
                 <legend>Timestamp</legend>
                 <label><input type="hidden" id="timestamp" name="timestamp"></label>
-            </fieldset>
-            <button type="submit" value="Submit">Submit</button>
+            </fieldset> -->
+            <button id="submit" type="submit" value="Submit">Submit</button>
         </form>
+
+        <dialog id="dialogBox">
+            <div></div>
+            <button id="closeButton">Close</button>
+        </dialog>
     </main>
 
     <footer>

@@ -101,3 +101,111 @@ footer {
 .social a:hover {
     background-color: #f7e7ce;
 }
+
+.radio{
+    display:grid;
+}
+
+.radio label{
+    background-color: #9399a3;
+    color:black;
+    margin:5px;
+    padding:.5rem;
+    border-radius: 0 20px 0 20px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:.3rem;
+}
+
+.radio button {
+    width: 100px;
+    background-color: #373f4e;
+    color: white;
+    padding: .2rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#submit{
+    background-color: #373f4e;
+    width:100%;
+    max-width: 400px;
+    padding:.7rem;
+    color:white;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.301);
+}
+
+form{
+    background-color: #f7e7ce96;
+    margin:2rem;
+    padding:.3rem
+}
+h1{
+    margin-left:2rem;
+    color: #373f4e;
+}
+
+fieldset{
+    border:none;
+    margin:1rem 0;
+    font-size: 18px;
+}
+
+legend{
+    color:#373f4e;
+}
+
+input{
+    border-left: 4px solid #6A2B3F;
+    width:100%;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+label{
+    max-width: 400px;
+}
+
+label [type="textarea"]{
+    height:3rem;
+}
+
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #ffffff94;
+    box-shadow: 0 0 3rem #777;
+    width: 80%;
+    margin:auto;
+    text-align: center;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.589);
+}
+
+dialog button {
+    padding: .5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.788);
+    cursor: pointer;
+}
+    
+
+#dialogBox{
+    padding: 1em;
+    max-width: 40ch;
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / 30%);
+    line-height: 1.5;
+}
+
+dialog[open] {
+    background-color: #373f4e;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+}
