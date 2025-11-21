@@ -146,10 +146,6 @@ label{
     display: grid;
 }
 
-#required{
-    color:#6A2B3F;
-}
-
 textarea{
     display:block;
     width:100%;
