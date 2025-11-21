@@ -1,17 +1,4 @@
 @media only screen and (min-width:38rem) {
-    #hero-image {
-        width: 100%;
-        height: auto;
-    }
-
-    header,
-    main,
-    nav,
-    footer {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
     .hamburguer {
         display: none;
     }
@@ -28,4 +15,14 @@
         display: flex;
         justify-content: space-around;
     }
+
+    .section{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .membership{
+        height:25rem;
+    }
+
 }

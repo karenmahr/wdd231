@@ -104,11 +104,11 @@ footer {
 
 form {
     background-color: #f7e7ce96;
-    margin: 2rem;
     padding: .3rem;
 }
 
-h1 {
+h1,
+h2 {
     margin-left: 2rem;
     color: #373f4e;
 }
@@ -121,7 +121,9 @@ fieldset {
 
 legend {
     color: #373f4e;
+    padding:.5rem;
 }
+
 
 input {
     border-left: 4px solid #6A2B3F;
@@ -204,6 +206,7 @@ dialog[open] {
     flex-direction: column;
     align-items: center;
     gap: .3rem;
+    margin-left: 2rem;
 }
 
 .membership button {

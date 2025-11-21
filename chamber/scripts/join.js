@@ -1,3 +1,12 @@
+const navButton = document.querySelector('#nav-button');
+
+navButton.addEventListener('click', () => {
+    navButton.classList.toggle('show');
+    navBar.classList.toggle('show');
+});
+
+const navBar = document.querySelector('#nav-bar');
+
 const openButton1 = document.querySelector("#openButton1");
 const openButton2 = document.querySelector("#openButton2");
 const openButton3 = document.querySelector("#openButton3");
