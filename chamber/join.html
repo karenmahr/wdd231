@@ -54,15 +54,14 @@
 
                 <form method="get" action="thankyou.html">
                     
-                    <label>First Name<input type="text" id="first" name="first" autocomplete="given-name" title="first" required></label>
-                    <label>Last Name<input type="text" id="last" name="last" autocomplete="family-name" title="last" required></label>
-                    <label>Organizational Title<input type="text" id="title" name="title" title="title"></label>
-                    <label>Email address<input type="email" id="email" name="email" autocomplete="email"
+                    <label>First Name <span id="required">*</span><input type="text" id="first" name="first" autocomplete="given-name" title="first" required></label>
+                    <label>Last Name <span id="required">*</span><input type="text" id="last" name="last" autocomplete="family-name" title="last" required></label>
+                    <label>Organizational Title<input type="text" id="title" name="title" title="title" autocomplete="organization-title"></label>
+                    <label>Email address <span id="required">*</span><input type="email" id="email" name="email" autocomplete="email"
                             placeholder="someone@example.com" required title="email"></label>
-                    <label>Mobile Phone Number<input type="tel" id="phone" name="phone" autocomplete="tel" title="phone" required ></label>
-                    <label>Business/Organization's Name<input type="textarea" id="organization" name="organization" autocomplete="organization" title="organization"
-                            required></label>
-                    <!-- <div id="animation"> </div> -->
+                    <label>Mobile Phone Number <span id="required">*</span><input type="tel" id="phone" name="phone" autocomplete="tel" title="phone" required ></label>
+                    <label>Business/Organization's Name <span id="required">*</span><textarea type="text" id="organization" name="organization" autocomplete="organization" title="organization"
+                            required></textarea></label>
                     <div class="radio">
                         <h3>Membership Level</h3>
                         <label><input type="radio" id="np" name="level" value="np"> Non Profit Membership Level</label>

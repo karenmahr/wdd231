@@ -139,14 +139,20 @@ input[type="radio"]{
 
 label{
     padding-top: 1rem;
+    display:block;
 }
-
-/* label [type="textarea"] {
-    height: 3rem;
-} */
 
 .radio{
     display: grid;
+}
+
+#required{
+    color:#6A2B3F;
+}
+
+textarea{
+    display:block;
+    width:100%;
 }
 
 dialog {
