@@ -7,6 +7,14 @@ navButton.addEventListener('click', () => {
 
 const navBar = document.querySelector('#nav-bar');
 
+const today = new Date();
+
+const currentYearSpan = document.querySelector("#currentyear");
+currentYearSpan.textContent = today.getFullYear();
+
+const lastModified = document.querySelector("#lastModified");
+lastModified.textContent = `Last modified: ${document.lastModified}`;
+
 const openButton1 = document.querySelector("#openButton1");
 const openButton2 = document.querySelector("#openButton2");
 const openButton3 = document.querySelector("#openButton3");

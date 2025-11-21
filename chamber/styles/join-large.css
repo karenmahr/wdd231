@@ -3,6 +3,14 @@
         display: none;
     }
 
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
     header {
         grid-template-columns: 24px auto;
     }

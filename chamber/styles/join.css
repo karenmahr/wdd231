@@ -193,7 +193,12 @@ dialog[open] {
 .membership{
     display:grid;
     max-width: 400px;
+    gap: .3rem;
+    border-radius: 0 20px 0 20px;
 }
+
+
+
 
 .membership>div{
     background-color: #9399a3;
@@ -207,6 +212,27 @@ dialog[open] {
     align-items: center;
     gap: .3rem;
     margin-left: 2rem;
+    animation: fadeColor 10s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeColor {
+    from {
+        background-color: #9399a300;
+    }
+
+    to {
+        background-color: #9399a3;
+    }
 }
 
 .membership button {
@@ -217,18 +243,3 @@ dialog[open] {
     border: 1px solid white;
     border-radius: 5px;
 }
-
-
-
-
-/* #animation label{
-    width:100px;
-    height:100px;
-    background-color: coral;
-    transition: width 0.3s ease-in-out 0.2s, height 0.3s ease-in-out 0.2s;
-    }
-    
-#animation label:hover {
-    width: 150px;
-    height: 150px;
-}  */

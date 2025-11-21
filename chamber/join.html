@@ -50,62 +50,64 @@
         <div class="section">
 
             <div class="form">
-                <h2>Membership Application Form</h2>
+                <h2>Membership Application Form</h2> 
 
                 <form method="get" action="thankyou.html">
-                    <legend>First Name</legend>
-                    <label><input type="text" id="first" name="first" autocomplete="given-name" required></label>
-                    <legend>Last Name</legend>
-                    <label><input type="text" id="last" name="last" autocomplete="family-name" required></label>
+                    
+                    <label>First Name<input type="text" id="first" name="first" autocomplete="given-name" required></label>
+                    <label>Last Name<input type="text" id="last" name="last" autocomplete="family-name" required></label>
+                    
                     <legend>Organizational Title</legend>
                     <label><input type="text" id="title" name="title"></label>
                     <legend>Email address</legend>
-                    <label><input type="email" id="email" name="email" autocomplete="email" placeholder="someone@example.com"required></label>
+                    <label><input type="email" id="email" name="email" autocomplete="email"
+                            placeholder="someone@example.com" required></label>
                     <legend>Mobile Phone Number</legend>
                     <label><input type="tel" id="phone" name="phone" autocomplete="tel" required></label>
                     <legend>Business/Organization's Name</legend>
-                    <label><input type="text" id="organization" name="organization" autocomplete="organization"required></label>
+                    <label><input type="text" id="organization" name="organization" autocomplete="organization"
+                            required></label>
                     <!-- <div id="animation"> </div> -->
-                        <div class="radio">
-                            <legend>Membership Level</legend>
-                            <label><input type="radio" id="np" name="level"> Non Profit Membership Level</label>
-                            <label><input type="radio" id="bronze" name="level"> Bronze Membership Level</label>
-                            <label><input type="radio" id="silver" name="level"> Silver Membership Level</label>
-                            <label><input type="radio" id="gold" name="level"> Gold Membership Level</label>
-                        </div>
+                    <div class="radio">
+                        <legend>Membership Level</legend>
+                        <label><input type="radio" id="np" name="level"> Non Profit Membership Level</label>
+                        <label><input type="radio" id="bronze" name="level"> Bronze Membership Level</label>
+                        <label><input type="radio" id="silver" name="level"> Silver Membership Level</label>
+                        <label><input type="radio" id="gold" name="level"> Gold Membership Level</label>
+                    </div>
                     <legend>Description</legend>
                     <label><input type="text" id="description" name="description"></label>
                     <legend>Timestamp</legend>
-                    <label><input type="hidden" id="timestamp" name="timestamp"></label> 
+                    <label><input type="hidden" id="timestamp" name="timestamp"></label>
                     <button id="submit" type="submit" value="Submit">Apply for Membership</button>
                 </form>
             </div>
-            
+
             <div class="membership">
                 <h2>Membership Levels</h2>
-                <div class="np">
-                    <p>Non Profit Membership Level</p>
-                    <button id="openButton1">Learn more</button>
-                </div>
-                <div class="bronze">
-                    <p>Bronze Membership (bronze)</p>
-                    <button id="openButton2">Learn more</button>
-                </div>
-                <div class="silver">
-                    <p>Silver Membership (silver)</p>
-                    <button id="openButton3">Learn more</button>
-                </div>
-                <div class="gold">
-                    <p>Gold Membership (gold)</p>
-                    <button id="openButton4">Learn more</button>
-                </div>
+                    <div class="np">
+                        <p>Non Profit Membership Level</p>
+                        <button id="openButton1">Learn more</button>
+                    </div>
+                    <div class="bronze">
+                        <p>Bronze Membership (bronze)</p>
+                        <button id="openButton2">Learn more</button>
+                    </div>
+                    <div class="silver">
+                        <p>Silver Membership (silver)</p>
+                        <button id="openButton3">Learn more</button>
+                    </div>
+                    <div class="gold">
+                        <p>Gold Membership (gold)</p>
+                        <button id="openButton4">Learn more</button>
+                    </div>
             </div>
         </div>
-    
-    <dialog id="dialogBox">
-        <div></div>
-        <button id="closeButton">Close</button>
-    </dialog>
+
+        <dialog id="dialogBox">
+            <div></div>
+            <button id="closeButton">Close</button>
+        </dialog>
 
     </main>
 
