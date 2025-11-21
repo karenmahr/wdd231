@@ -55,20 +55,20 @@
                 <form method="get" action="thankyou.html">
                     
                     <label>First Name<input type="text" id="first" name="first" autocomplete="given-name" title="first" required></label>
-                    <label>Last Name<input type="text" id="last" name="last" autocomplete="family-name" required></label>
-                    <label>Organizational Title<input type="text" id="title" name="title"></label>
+                    <label>Last Name<input type="text" id="last" name="last" autocomplete="family-name" title="last" required></label>
+                    <label>Organizational Title<input type="text" id="title" name="title" title="title"></label>
                     <label>Email address<input type="email" id="email" name="email" autocomplete="email"
-                            placeholder="someone@example.com" required></label>
-                    <label>Mobile Phone Number<input type="tel" id="phone" name="phone" autocomplete="tel" required></label>
-                    <label>Business/Organization's Name<input type="text" id="organization" name="organization" autocomplete="organization"
+                            placeholder="someone@example.com" required title="email"></label>
+                    <label>Mobile Phone Number<input type="tel" id="phone" name="phone" autocomplete="tel" title="phone" required ></label>
+                    <label>Business/Organization's Name<input type="textarea" id="organization" name="organization" autocomplete="organization" title="organization"
                             required></label>
                     <!-- <div id="animation"> </div> -->
                     <div class="radio">
                         <h3>Membership Level</h3>
-                        <label><input type="radio" id="np" name="level"> Non Profit Membership Level</label>
-                        <label><input type="radio" id="bronze" name="level"> Bronze Membership Level</label>
-                        <label><input type="radio" id="silver" name="level"> Silver Membership Level</label>
-                        <label><input type="radio" id="gold" name="level"> Gold Membership Level</label>
+                        <label><input type="radio" id="np" name="level" value="np"> Non Profit Membership Level</label>
+                        <label><input type="radio" id="bronze" name="level" value="bronze"> Bronze Membership Level</label>
+                        <label><input type="radio" id="silver" name="level" value="silver"> Silver Membership Level</label>
+                        <label><input type="radio" id="gold" name="level" value="gold"> Gold Membership Level</label>
                     </div>
                     <label>Description<input type="text" id="description" name="description"></label>
                     <label>Timestamp<input type="hidden" id="timestamp" name="timestamp"></label>

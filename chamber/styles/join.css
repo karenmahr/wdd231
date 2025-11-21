@@ -134,6 +134,11 @@ input {
 
 input[type="radio"]{
     width:auto; 
+    margin-right: 6px;
+}
+
+label{
+    padding-top: 1rem;
 }
 
 /* label [type="textarea"] {
