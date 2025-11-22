@@ -56,12 +56,17 @@
                     
                     <label>First Name *<input type="text" id="first" name="first" autocomplete="given-name" title="first" required></label>
                     <label>Last Name *<input type="text" id="last" name="last" autocomplete="family-name" title="last" required></label>
-                    <label>Organizational Title<input type="text" id="title" name="title" title="title" autocomplete="organization-title"></label>
+
+                    <label>Organizational Title<input type="text" id="title" name="title" title="title" autocomplete="organization-title" pattern="[A-Za-z\s\-']+"></label>
+
                     <label>Email address *<input type="email" id="email" name="email" autocomplete="email"
                             placeholder="someone@example.com" required title="email"></label>
+
                     <label>Mobile Phone Number *<input type="tel" id="phone" name="phone" autocomplete="tel" title="phone" required ></label>
-                    <label>Business/Organization's Name *<textarea type="text" id="organization" name="organization" autocomplete="organization" title="organization"
-                             pattern="[A-Za-z\s\-']+" required></textarea></label>
+
+                    <label>Business/Organization's Name *<input type="text" pattern="[A-Za-z\s\-']+"><textarea id="organization" name="organization" autocomplete="organization" title="organization"
+                              required></textarea></label>
+
                     <div class="radio">
                         <h3>Membership Level</h3>
                         <label><input type="radio" id="np" name="level" value="np"> Non Profit Membership Level</label>
