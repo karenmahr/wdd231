@@ -61,5 +61,41 @@ const displayPlaces = (places) =>
     })
 
 displayPlaces(places);
-    
+
+
+const storageKey = "lastVisit";
+const msDay= 1000 * 60 * 60 * 24;
+
+const previousVisit = localStorage.getItem(storageKey);
+const footer = document.querySelector("footer");
+
+function visitMessage(prev) {
+    if (!prev) {
+        return "Welcome! Let us know if you have any questions.";
+    }
+
+    const last = Number(prev);
+    const now = Date.now();
+    const diff = now - last;
+
+    if (diff < msDay) {
+        return "Back so soon! Awesome!";
+    }
+
+    const days = Math.floor(diff / msDay);
+    const unit = days === 1 ? "day" : "days";
+
+    return `You last visited ${days} ${unit} ago.`;
+}
+
+const message = visitMessage(previousVisit);
+
+if (footer) {
+    const p = document.createElement("p");
+    p.textContent = message;
+    footer.appendChild(p);
+}
+
+localStorage.setItem(storageKey, Date.now());
+
 
