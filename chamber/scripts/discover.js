@@ -15,8 +15,6 @@ currentYearSpan.textContent = today.getFullYear();
 const lastModified = document.querySelector("#lastModified");
 lastModified.textContent = `Last modified: ${document.lastModified}`;
 
-
-
 import { places } from '../data/places.mjs'
 console.log(places)
 
