@@ -111,3 +111,61 @@ main {
 .menu {
     display: none;
 }
+
+#cards div{
+    margin: 1rem 8px;
+    border-radius: 10px;
+    padding:.5rem 0;
+    overflow: hidden;
+    min-width: 250px;
+    background-color: #9399a391;
+    border:1px solid #6A2B3F;
+    display:grid;
+    grid-template-areas:
+    "name"
+    "photograph"
+    "description"
+    "location" ;
+}
+
+#cards div h2{
+    margin:1rem 10px;
+    grid-area: name;
+    text-align: center;
+    background-color: #373f4e;
+    color:#f7e7ce;
+    border-radius: 20px 0 20px 0;
+    padding:5px;
+}
+
+#cards div p{
+    margin:1rem 10px;
+    grid-area: description;
+}
+
+#cards div img{
+    width:100%;
+    height: auto;
+    grid-area:photograph;
+}
+
+#cards div img:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+#cards div address{
+    margin:1rem 10px;
+    grid-area: location;
+}
+
+#cards div button{
+    background-color: #373f4ec0;
+    color: white;
+    padding: .2rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 17px;
+    width:90%;
+    align-items: center;
+}
+

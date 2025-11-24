@@ -24,4 +24,17 @@
         display: flex;
         justify-content: space-around;
     }
+
+    #cards div {
+        grid-template-areas:
+            "name "
+            "photograph description"
+            "photograph location";
+    }
+
+    #cards div img {
+        width: 300px;
+        height: auto;
+        grid-area: photograph;
+    }
 }

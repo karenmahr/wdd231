@@ -14,3 +14,52 @@ currentYearSpan.textContent = today.getFullYear();
 
 const lastModified = document.querySelector("#lastModified");
 lastModified.textContent = `Last modified: ${document.lastModified}`;
+
+
+
+import { places } from '../data/places.mjs'
+console.log(places)
+
+const cards = document.querySelector("#cards");
+
+const displayPlaces = (places) =>
+    places.forEach((place) => {
+        let card = document.createElement("div");
+
+        let title = document.createElement("h2");
+        let image = document.createElement("img");
+        let address = document.createElement("address");
+        let description = document.createElement("p");
+        let button = document.createElement("button");
+
+        title.textContent = place.name;
+        address.classList.add("title");
+
+        image.setAttribute("src", place.imageurl);
+        image.setAttribute("alt", place.name);
+        image.setAttribute("loading", "lazy");
+        image.setAttribute('width', '300');
+        image.setAttribute('height', '200'); 
+
+        address.textContent = place.address;
+        address.classList.add("address");
+
+        description.textContent = place.description;
+        address.classList.add("description");
+
+        button.textContent = `Learn more`;
+        button.classList.add("button");
+
+        card.appendChild(title)
+        card.appendChild(image)
+        card.appendChild(address)
+        card.appendChild(description)
+        card.appendChild(button)
+
+
+        cards.appendChild(card);
+    })
+
+displayPlaces(places);
+    
+
