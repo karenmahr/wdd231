@@ -27,9 +27,10 @@
 
     #cards div {
         grid-template-areas:
-            "name "
+            "name name "
             "photograph description"
-            "photograph location";
+            "photograph location"
+            "button button";
     }
 
     #cards div img {

@@ -24,8 +24,8 @@ const displayPlaces = (places) =>
     places.forEach((place) => {
         let card = document.createElement("div");
 
-        let title = document.createElement("h2");
         let image = document.createElement("img");
+        let title = document.createElement("h2");
         let address = document.createElement("address");
         let description = document.createElement("p");
         let button = document.createElement("button");
@@ -48,8 +48,9 @@ const displayPlaces = (places) =>
         button.textContent = `Learn more`;
         button.classList.add("button");
 
-        card.appendChild(title)
+        
         card.appendChild(image)
+        card.appendChild(title)
         card.appendChild(address)
         card.appendChild(description)
         card.appendChild(button)

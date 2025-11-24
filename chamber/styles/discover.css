@@ -115,31 +115,33 @@ main {
 #cards div{
     margin: 1rem 8px;
     border-radius: 10px;
-    padding:.5rem 0;
     overflow: hidden;
     min-width: 250px;
+    max-width: 800px;
+    padding:0 5px;
     background-color: #9399a391;
     border:1px solid #6A2B3F;
+    align-items: center;
     display:grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "name"
-    "photograph"
-    "description"
-    "location" ;
+        "name name"
+        "photograph photograph"
+        "description description"
+        "location location"
+        "button button";
 }
 
 #cards div h2{
-    margin:1rem 10px;
+    margin:5px 5px;
     grid-area: name;
-    text-align: center;
-    background-color: #373f4e;
-    color:#f7e7ce;
-    border-radius: 20px 0 20px 0;
+    border-bottom: 1px solid #373f4e;
+    font-size: 20px;
     padding:5px;
 }
 
 #cards div p{
-    margin:1rem 10px;
+    margin:5px 5px;
     grid-area: description;
 }
 
@@ -147,6 +149,10 @@ main {
     width:100%;
     height: auto;
     grid-area:photograph;
+    align-items: center;
+    background-color: #6A2B3F;
+    border-radius: 5px;
+    border:1px solid #63728E;
 }
 
 #cards div img:hover {
@@ -154,18 +160,26 @@ main {
 }
 
 #cards div address{
-    margin:1rem 10px;
+    margin: 5px 5px;
     grid-area: location;
+
 }
 
 #cards div button{
     background-color: #373f4ec0;
     color: white;
     padding: .2rem;
+    margin:.2rem;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 17px;
-    width:90%;
+    width: 100%;
     align-items: center;
+    grid-area: button;
+    justify-self: center;
 }
 
+h1 {
+    color: #63728E;
+    font-size: x-large;
+}
