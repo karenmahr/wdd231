@@ -1,0 +1,36 @@
+*{
+    font-family: "Roboto","Parisienne";
+}
+
+:root {
+    --silver: #C0C0C0;
+    --champagne: #F7E7CE;
+    --pine-teal: #344E41;
+    --deep-mocha: #40332B;
+}
+
+main{
+    font-family: "Roboto";
+}
+
+.navigation{
+    background-color: #F7E7CE;
+    color:#344E41;
+}
+
+h1,
+h2{
+    color:#344E41;
+    font-family: "Parisienne";
+}
+
+.countdown,
+.weather{
+    background-color: #C0C0C0;
+}
+
+.cooking,
+.decoration{
+    background-color:#F7E7CE;
+    color:#40332B;
+}
