@@ -9,6 +9,28 @@
     --deep-mocha: #40332B;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #40332B;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4px;
+}
+
+header span {
+    font-size: 1.5rem;
+    color: #40332B;
+    font-family: "Parisienne";
+}
+
 main{
     font-family: "Roboto";
 }
@@ -18,19 +40,262 @@ main{
     color:#344E41;
 }
 
-h1,
 h2{
     color:#344E41;
     font-family: "Parisienne";
+    background-color: #F7E7CE;
+    border:1px solid #40332B;
+    padding:1rem 3rem 1rem 2rem;
+    border-radius: 20px 0 20px 0;
+}
+
+#animations {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.animation {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    animation: fadeColor 12s ease-in-out infinite;
+}
+
+.animation:nth-child(1) {
+    left: 20%;
+}
+
+.animation:nth-child(2) {
+    left: 40%;
+}
+
+.animation:nth-child(3) {
+    left: 60%;
+}
+
+.animation:nth-child(4) {
+    left: 80%;
+}
+
+
+@keyframes fadeColor {
+    from {
+        color: rgba(255, 255, 255, 0);
+    }
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    
+    25% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    
+    75% {
+        opacity: 1;
+        }
+    
+    100% {
+        opacity: 0;
+        transform: scale(1);
+        }
+}
+
+h1 {
+    color: #40332B;
+    font-size: 30px;
+    font-family: "Parisienne";
+    margin:0;
 }
 
 .countdown,
 .weather{
-    background-color: #C0C0C0;
+    background-color: #F7E7CE;
+    color: #40332B;
 }
 
 .cooking,
 .decoration{
     background-color:#F7E7CE;
     color:#40332B;
+}
+
+.hamburguer {
+    background: none;
+    border: none;
+    color: #63728E;
+    cursor: pointer
+}
+
+.hamburguer::before {
+    content: "\2630";
+}
+
+.hamburguer.show::before {
+    content: "\00D7"
+}
+
+.navigation {
+    display: none;
+    background-color: #C0C0C0;
+}
+
+.navigation.show {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #344E41;
+    text-align: center;
+    padding: 1rem;
+    display: block;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: overline;
+}
+
+.active {
+    color: #6A2B3F;
+}
+
+footer {
+    background-color: #C0C0C0;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    column-gap: 12px;
+    justify-content: center;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #344e417c solid 1px;
+    width: 15px;
+    height: 15px;
+    border-radius: 6px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #f7e7ce;
+}
+
+main {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 700px;
+}
+
+.menu {
+    display: none;
+}
+
+section {
+    padding: 0.7rem;
+    margin: 0.1rem;
+    text-align: center;
+    height: 14rem;
+}
+
+img {
+    width: auto;
+    height: 110px;
+}
+
+.website {
+    color: #0000FF;
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 0rem;
+    max-width: 800px;
+}
+
+#hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.countdown{
+    align-items: center;
+    border: 1px solid #40332B;
+    background-color: #f7e7ce44;
+    border-radius: 10px;
+    text-align: center;
+    margin: .5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.301);
+    margin-top: 0;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #40332B;
+    background-color: #f7e7ce44;
+    border-radius: 10px;
+    text-align: center;
+    margin: .5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.301);
+}
+
+#temperature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#temperature p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#description {
+    margin-top: .2rem;
+    text-transform: capitalize;
+}
+
+#figure {
+    display: flex;
+    justify-content: center;
+    margin-bottom: .5rem;
+}
+
+#figure img {
+    width: 80px;
+    height: 80px;
+}
+
+section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.301);
+    padding: 0.7rem;
+    margin: 0.1rem;
+    text-align: center;
+    height: 14rem;
 }
