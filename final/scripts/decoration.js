@@ -5,7 +5,7 @@ const cards = document.querySelector('#cards');
 
 const displayDecorations = (decorations) =>
     decorations.forEach((decoration) => {
-        let card = document.createElement("section");
+        let card = document.createElement("div");
         let image = document.createElement("img");
         let title = document.createElement("h2");
         let description = document.createElement("p");
@@ -22,8 +22,8 @@ const displayDecorations = (decorations) =>
         image.setAttribute('width', '340');
         image.setAttribute('height', '440');
 
-        card.appendChild(image)
         card.appendChild(title)
+        card.appendChild(image)
         card.appendChild(description)
 
         cards.appendChild(card);

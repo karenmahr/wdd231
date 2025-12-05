@@ -1,0 +1,202 @@
+* {
+    font-family: "Roboto", "Parisienne";
+    background-color: #344E41;
+}
+
+:root {
+    --silver: #C0C0C0;
+    --champagne: #F7E7CE;
+    --pine-teal: #344E41;
+    --deep-mocha: #40332B;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #40332B;
+    column-gap: 8px;
+    background-color: #C0C0C0;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4px;
+    background-color: #C0C0C0;
+}
+
+header span {
+    font-size: 1.5rem;
+    color: #40332B;
+    font-family: "Parisienne";
+    background-color: #C0C0C0;
+}
+
+main {
+    font-family: "Roboto";
+    background-color: #344E41;
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 700px;
+}
+
+.navigation {
+    background-color: #C0C0C0;
+    color: white;
+}
+
+h1 {
+    color: #C0C0C0;
+    font-size: 30px;
+    font-family: "Parisienne";
+    margin: 0;
+}
+
+.countdown,
+.weather {
+    background-color: #F7E7CE;
+    color: #40332B;
+}
+
+.cooking,
+.decoration {
+    background-color: #F7E7CE;
+    color: #40332B;
+}
+
+.hamburguer {
+    background: none;
+    border: none;
+    color: #63728E;
+    cursor: pointer
+}
+
+.hamburguer::before {
+    content: "\2630";
+}
+
+.hamburguer.show::before {
+    content: "\00D7"
+}
+
+.navigation {
+    display: none;
+    background-color: #C0C0C0;
+}
+
+.navigation.show {
+    display: block;
+    background-color: #C0C0C0;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #C0C0C0;
+    text-align: center;
+    padding: 1rem;
+    display: block;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: overline;
+}
+
+.active {
+    color: #6A2B3F;
+}
+
+footer {
+    color: #C0C0C0;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    column-gap: 12px;
+    justify-content: center;
+    
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #344e417c solid 1px;
+    width: 15px;
+    height: 15px;
+    border-radius: 6px;
+    background-color: #C0C0C0;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+    background-color: #C0C0C0;
+}
+
+.social a:hover {
+    background-color: #f7e7ce;
+}
+
+.menu {
+    display: none;
+    background-color: #C0C0C0;
+}
+
+#cards div {
+    margin: 1rem 8px;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 250px;
+    max-width: 800px;
+    padding: 0 5px;
+    border: 1px solid #40332B;
+    background-color: white;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "title title"
+        "photograph photograph"
+        "description description"
+}
+
+#cards div h2 {
+    margin: 5px 5px;
+    grid-area: title;
+    font-size: 30px;
+    padding: 5px;
+    font-family: "Parisienne";
+    color: #40332B;
+    background-color:white;
+}
+
+#cards div p {
+    margin: 5px 5px;
+    grid-area: description;
+    color: #40332B;
+    background-color: white;
+}
+
+#cards div img {
+    width: 100%;
+    height: auto;
+    grid-area: photograph;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid #40332B;
+}
+
+#cards div img:hover {
+    box-shadow: 0 0 50px #333;
+}
