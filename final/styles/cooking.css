@@ -1,0 +1,78 @@
+*{
+    background-color: #C0C0C0;
+}
+
+#cards div {
+    margin: 1rem 8px;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 250px;
+    max-width: 800px;
+    padding: 0 5px;
+    border: 2px solid #40332B;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.301);
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "title title"
+        "photograph photograph"
+        "ingredients ingredients"
+        "description description"
+        "category category"
+}
+
+#cards div h2 {
+    margin: 5px 5px;
+    grid-area: title;
+    font-size: 30px;
+    padding: 5px;
+    font-family: "Parisienne";
+    color: #40332B;
+    border: 2px solid #40332B;
+    background: linear-gradient(to right, #344e4133, #344e4194);
+}
+
+#cards div p.description {
+    margin: 5px 5px;
+    grid-area: description;
+    color: #40332B;
+    background-color: white;
+}
+
+#cards div p.category {
+    margin: 5px 5px;
+    grid-area: category;
+    color: #40332B;
+    background-color: white;
+}
+
+#cards div p.ingredients {
+    margin: 5px 5px;
+    grid-area: ingredients;
+    color: #40332B;
+    background-color: white;
+}
+
+#cards div img {
+    width: 100%;
+    height: auto;
+    grid-area: photograph;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid #40332B;
+    background-color: white;
+}
+
+#cards div img:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+button{
+    background-color: #344e4133;
+    border-radius: 10px;
+    padding:.7rem;
+}
+
+

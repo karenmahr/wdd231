@@ -5,14 +5,18 @@ const cards = document.querySelector('#cards');
 
 const displayReceipts = (receipts) =>
     receipts.forEach((receipt) => {
-        let card = document.createElement("section");
+        let card = document.createElement("div");
         let image = document.createElement("img");
         let title = document.createElement("h2");
+        let ingredients = document.createElement("p");
         let description = document.createElement("p");
         let category = document.createElement("p");
 
         title.textContent = receipt.title;
         title.classList.add("title");
+
+        ingredients.textContent = receipt.ingredients;
+        ingredients.classList.add("ingredients");
 
         description.textContent = receipt.description;
         description.classList.add("description");
@@ -28,6 +32,7 @@ const displayReceipts = (receipts) =>
 
         card.appendChild(image)
         card.appendChild(title)
+        card.appendChild(ingredients)
         card.appendChild(description)
         card.appendChild(category)
 
@@ -36,32 +41,3 @@ const displayReceipts = (receipts) =>
 
 displayReceipts(receipts);
 
-const appetizerbutton = document.querySelector("#appetizer");
-const mainbutton = document.querySelector("#main");
-const dessertbutton = document.querySelector("#dessert");
-const display = document.querySelector("#cards");
-
-appetizerbutton.addEventListener("click", () => {
-    display.classList.add("appetizer");
-    display.classList.remove("main");
-    display.classList.remove("dessert");
-});
-
-mainbutton.addEventListener("click", () => {
-    display.classList.add("main");
-    display.classList.remove("appetizer");
-    display.classList.remove("dessert");
-});
-
-dessertbutton.addEventListener("click", () => {
-    display.classList.add("dessert");
-    display.classList.remove("appetizer");
-    display.classList.remove("main");
-});
-
-// listbutton.addEventListener("click", showList);
-
-// function showList() {
-//     display.classList.add("list");
-//     display.classList.remove("grid");
-// };
