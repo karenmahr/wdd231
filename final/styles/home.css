@@ -204,12 +204,14 @@ main {
     max-width: 700px;
 }
 
-
 section {
     padding: 0.7rem;
     margin: 0.1rem;
     text-align: center;
     height: 14rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 img {
@@ -246,10 +248,11 @@ img {
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.301);
     margin-top: 0;
+    display: block;
 }
 
 .weather {
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     border: 1px solid #40332B;
@@ -259,6 +262,7 @@ img {
     margin: .5rem;
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.301);
+
 }
 
 #temperature {

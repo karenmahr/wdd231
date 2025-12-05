@@ -1,9 +1,23 @@
 import { receipts } from '../data/receipts.mjs'
 console.log(receipts)
 
-const cards = document.querySelector('#cards');
+const cards = document.querySelector('#homeCards');
 
-const displayReceipts = (receipts) =>
+async function spotlight() {
+    const response = await fetch(url);
+    const data = await response.mjs();
+    const randomCooking = getRandomDecorations(data.cooking, 2);
+    displayCooking(randomCooking);
+}
+spotlight();
+
+function getRandomDecorations(cooking, count) {
+    const shuffled = cooking.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
+const displayReceipts = (receipts) => {
+    cards.innerHTML = "";
     receipts.forEach((receipt) => {
         let card = document.createElement("div");
         let image = document.createElement("img");
@@ -37,7 +51,29 @@ const displayReceipts = (receipts) =>
         card.appendChild(category)
 
         cards.appendChild(card);
-    });
+    })
+};
 
 displayReceipts(receipts);
 
+function setFilter(filterName) {
+    localStorage.setItem("selectedFilter", filterName);
+}
+
+const appetizer = document.querySelector("#appetizer");
+appetizer.addEventListener("click", () => {
+    displayReceipts(receipts.filter(receipt => receipt.category.includes("Appetizer")));
+    setFilter("appetizer");
+});
+
+const dessert = document.querySelector("#dessert");
+dessert.addEventListener("click", () => {
+    displayReceipts(receipts.filter(receipt => receipt.category.includes("Dessert")));
+    setFilter("dessert");
+});
+
+const main = document.querySelector("#main");
+main.addEventListener("click", () => {
+    displayReceipts(receipts.filter(receipt => receipt.category.includes("Main Course")));
+    setFilter("main");
+});

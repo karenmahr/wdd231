@@ -14,7 +14,7 @@ export const receipts = [
         "category": "Main Course",
         "imageurl": "images/chicken.webp"
     },
-
+    
     {
         "title": "Candied Peanuts",
         "ingredients": "Cook peanuts, sugar, and water until the sugar crystallizes.",

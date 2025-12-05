@@ -64,3 +64,18 @@ function updateCountdown() {
 }
 
 updateCountdown();
+
+// const cards = document.querySelector('#cards');
+
+// async function spotlight() {
+//     const response = await fetch(url);
+//     const data = await response.mjs();
+//     const randomDecorations = getRandomDecorations(data.decorations, 2);
+//     displayDecorations(randomDecorations);
+// }
+// spotlight();
+
+// function getRandomDecorations(decorations, count) {
+//     const shuffled = decorations.sort(() => 0.5 - Math.random());
+//     return shuffled.slice(0, count);
+// }
