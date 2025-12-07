@@ -1,19 +1,89 @@
 const url = 'data/decorations.json';
+const urlReceipts = 'data/receipts.json';
 
-const cards = document.querySelector('#cards');
+const cards = document.querySelector('#cardsHome');
 
-async function spotlight() {
+async function spotlightDecorations() {
     const response = await fetch(url);
     const data = await response.json();
-    const randomDecorations = getRandomDecorations(data.decorations, 3);
+    const randomDecorations = getRandomDecorations(data.decorations, 2);
     displayDecorations(randomDecorations);
 }
-spotlight();
+spotlightDecorations();
 
 function getRandomDecorations(decorations, count) {
     const shuffled = decorations.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
 }
+
+const displayDecorations = (decorations) =>
+    decorations.forEach((decoration) => {
+        let card = document.createElement("div");
+        let image = document.createElement("img");
+        let title = document.createElement("h2");
+        let description = document.createElement("p");
+
+        title.textContent = decoration.title;
+        title.classList.add("title");
+
+        description.textContent = decoration.description;
+        description.classList.add("description");
+
+        image.setAttribute("src", decoration.imageurl);
+        image.setAttribute("alt", decoration.name);
+        image.setAttribute("loading", "lazy");
+        image.setAttribute('width', '340');
+        image.setAttribute('height', '440');
+
+        card.appendChild(title)
+        card.appendChild(image)
+        card.appendChild(description)
+
+        cards.appendChild(card);
+    });
+
+const cardsReceipts = document.querySelector('#cardsReceipts');
+
+async function spotlightReceipts() {
+    const response = await fetch(urlReceipts);
+    const data = await response.json();
+    const randomReceipts = getRandomReceipts(data.receipts, 2);
+    displayReceipts(randomReceipts);
+}
+spotlightReceipts();
+
+function getRandomReceipts(receipts, count) {
+    const shuffled = receipts.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
+const displayReceipts = (receipts) => {
+    receipts.forEach((receipt) => {
+        let card = document.createElement("div");
+        let image = document.createElement("img");
+        let title = document.createElement("h2");
+        let description = document.createElement("p");
+
+        title.textContent = receipt.title;
+        title.classList.add("title");
+
+        description.textContent = receipt.description;
+        description.classList.add("description");
+
+        image.setAttribute("src", receipt.imageurl);
+        image.setAttribute("alt", receipt.name);
+        image.setAttribute("loading", "lazy");
+        image.setAttribute('width', '340');
+        image.setAttribute('height', '440');
+
+        card.appendChild(image)
+        card.appendChild(title)
+        card.appendChild(description)
+
+
+        cards.appendChild(card);
+    })
+};
 
 const navButton = document.querySelector('#nav-button');
 

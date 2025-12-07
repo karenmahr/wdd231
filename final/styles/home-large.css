@@ -91,10 +91,29 @@
 
     .section {
         display: grid;
-        grid-template-columns: auto 260px 230px;
+        grid-template-columns: auto auto;
     }
 
     .events {
         height: 200px;
     }
+
+    #cardsReceipts {
+        max-width: 800px;
+        margin: auto;
+    }
+    #cardsHome div,
+    #cardsReceipts div {
+        grid-template-columns: auto auto;
+        grid-template-areas:
+        "title title"
+        "photograph description"
+    }
+    
+    #cardsReceipts div img {
+        width: 100%;
+        height: auto;
+        grid-area: photograph;
+    }
+
 }

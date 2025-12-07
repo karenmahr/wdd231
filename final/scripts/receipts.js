@@ -1,14 +1,15 @@
 const url = 'data/receipts.json';
 
-const cards = document.querySelector('#cookingCards');
+const cards = document.querySelector('#cards');
 
-async function spotlight() {
+async function getReceiptsData() {
     const response = await fetch(url);
     const data = await response.json();
-    const randomCooking = getRandomCooking(data.receipts, 3);
-    displayCooking(randomCooking);
+    receipts = data.receipts; 
+    displayReceipts(receipts);
 }
-spotlight();
+
+getReceiptsData();
 
 function getRandomCooking(receipts, count) {
     const shuffled = receipts.sort(() => 0.5 - Math.random());
@@ -53,8 +54,6 @@ const displayReceipts = (receipts) => {
     })
 };
 
-displayReceipts(receipts);
-
 function setFilter(filterName) {
     localStorage.setItem("selectedFilter", filterName);
 }
@@ -76,3 +75,20 @@ main.addEventListener("click", () => {
     displayReceipts(receipts.filter(receipt => receipt.category.includes("Main Course")));
     setFilter("main");
 });
+
+const navButton = document.querySelector('#nav-button');
+
+navButton.addEventListener('click', () => {
+    navButton.classList.toggle('show');
+    navBar.classList.toggle('show');
+});
+
+const navBar = document.querySelector('#nav-bar');
+
+const today = new Date();
+
+const currentYearSpan = document.querySelector("#currentyear");
+currentYearSpan.textContent = today.getFullYear();
+
+const lastModified = document.querySelector("#lastModified");
+lastModified.textContent = `Last modified: ${document.lastModified}`;

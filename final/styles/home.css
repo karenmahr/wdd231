@@ -204,14 +204,13 @@ main {
     max-width: 700px;
 }
 
-section {
+.section {
     padding: 0.7rem;
-    margin: 0.1rem;
     text-align: center;
-    height: 14rem;
-    display: flex;
-    justify-content: center;
+    display: block;
     gap: 10px;
+    min-width: 250px;
+    max-width: 800px;
 }
 
 img {
@@ -247,7 +246,6 @@ img {
     margin: .5rem;
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.301);
-    margin-top: 0;
     display: block;
 }
 
@@ -262,7 +260,6 @@ img {
     margin: .5rem;
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.301);
-
 }
 
 #temperature {
@@ -293,10 +290,60 @@ img {
     height: 80px;
 }
 
-section {
+#cardsReceipts div,
+#cardsHome div {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title title"
+    "photograph photograph"
+    "description description";
+    margin: 1rem 8px;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 250px;
+    max-width: 800px;
+    padding: 0 5px;
+    border: 2px solid #40332B;
+    background-color: #F7E7CE;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.301);
-    padding: 0.7rem;
-    margin: 0.1rem;
-    text-align: center;
-    height: 14rem;
+    align-items: center;
+    display: grid;
+}
+
+#cardsHome div h2,
+#cardsReceipts div h2{
+    margin: 5px 5px;
+    grid-area: title;
+    font-size: 22px;
+    padding: 5px;
+    font-family: "Parisienne";
+    color: #40332B;
+    background-color: #F7E7CE;
+    border:none;
+    border-radius: 0px;
+    border-bottom:1px solid #40332B;
+}
+
+#cardsHome div p.description,
+#cardsReceipts div p.description {
+    margin: 5px 5px;
+    grid-area: description;
+    color: #40332B;
+    background-color: #F7E7CE;
+}
+
+#cardsHome div img,
+#cardsReceipts div img {
+    width: 60%;
+    height: auto;
+    grid-area: photograph;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid #40332B;
+    background-color: white;
+}
+
+#cardsHome div img:hover,
+#cardsReceipts div img:hover {
+    box-shadow: 0 0 50px #333;
 }
