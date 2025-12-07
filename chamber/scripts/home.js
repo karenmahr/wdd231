@@ -11,7 +11,7 @@ async function spotlight() {
 spotlight();
 
 function getRandomMembers(members, count) {
-    const shuffled = members.sort(() => 0.5 - Math.random());
+    const shuffled = members.sort(() => 0.5 - Math.random()); 
     return shuffled.slice(0, count);
 }
 

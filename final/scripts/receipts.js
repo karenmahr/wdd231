@@ -1,18 +1,17 @@
-import { receipts } from '../data/receipts.mjs'
-console.log(receipts)
+const url = 'data/receipts.json';
 
-const cards = document.querySelector('#homeCards');
+const cards = document.querySelector('#cookingCards');
 
 async function spotlight() {
     const response = await fetch(url);
-    const data = await response.mjs();
-    const randomCooking = getRandomDecorations(data.cooking, 2);
+    const data = await response.json();
+    const randomCooking = getRandomCooking(data.receipts, 3);
     displayCooking(randomCooking);
 }
 spotlight();
 
-function getRandomDecorations(cooking, count) {
-    const shuffled = cooking.sort(() => 0.5 - Math.random());
+function getRandomCooking(receipts, count) {
+    const shuffled = receipts.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
 }
 

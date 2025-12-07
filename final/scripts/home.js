@@ -1,3 +1,20 @@
+const url = 'data/decorations.json';
+
+const cards = document.querySelector('#cards');
+
+async function spotlight() {
+    const response = await fetch(url);
+    const data = await response.json();
+    const randomDecorations = getRandomDecorations(data.decorations, 3);
+    displayDecorations(randomDecorations);
+}
+spotlight();
+
+function getRandomDecorations(decorations, count) {
+    const shuffled = decorations.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
 const navButton = document.querySelector('#nav-button');
 
 navButton.addEventListener('click', () => {
@@ -65,17 +82,3 @@ function updateCountdown() {
 
 updateCountdown();
 
-// const cards = document.querySelector('#cards');
-
-// async function spotlight() {
-//     const response = await fetch(url);
-//     const data = await response.mjs();
-//     const randomDecorations = getRandomDecorations(data.decorations, 2);
-//     displayDecorations(randomDecorations);
-// }
-// spotlight();
-
-// function getRandomDecorations(decorations, count) {
-//     const shuffled = decorations.sort(() => 0.5 - Math.random());
-//     return shuffled.slice(0, count);
-// }

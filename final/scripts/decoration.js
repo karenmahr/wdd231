@@ -1,20 +1,13 @@
-import { decorations } from '../data/decorations.mjs'
-console.log(decorations)
+const url = 'data/decorations.json';
 
-const cards = document.querySelector('#homeCards');
+const cards = document.querySelector('#cards');
 
-async function spotlight() {
+async function getDecorationData() {
     const response = await fetch(url);
-    const data = await response.mjs();
-    const randomDecorations = getRandomDecorations(data.decorations, 2);
-    displayDecorations(randomDecorations);
+    const data = await response.json();
+    displayDecorations(data.decorations);
 }
-spotlight();
-
-function getRandomDecorations(decorations, count) {
-    const shuffled = decorations.sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, count);
-}
+getDecorationData();
 
 const displayDecorations = (decorations) =>
     decorations.forEach((decoration) => {
@@ -42,6 +35,8 @@ const displayDecorations = (decorations) =>
         cards.appendChild(card);
     });
 
-displayDecorations(decorations);
+
+
+
 
 
