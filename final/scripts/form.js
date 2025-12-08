@@ -25,15 +25,14 @@ const dialogBoxText = document.querySelector("#dialogBox div");
 
 openButton1.addEventListener("click", () => {
     dialogBox.showModal();
-    dialogBoxText.innerHTML = 'Non-profit (NP) Membership is free and gives organizations basic access to the community and resources at no cost.'
+    dialogBoxText.innerHTML = 'You can use all features and content without restrictions. This means you’re free to explore everything at any time, as much as you want, with no limits on usage.'
 });
 
 openButton2.addEventListener("click", () => {
     dialogBox.showModal();
-    dialogBoxText.innerHTML = 'Bronze members receive foundational benefits such as entry-level support or limited features.'
+    dialogBoxText.innerHTML = 'You still get access to the platform, but only to certain features or a reduced amount of content. Some tools may be restricted, or you may only use them a limited number of times.'
 });
 
 closeButton.addEventListener("click", () => {
     dialogBox.close();
 });
-

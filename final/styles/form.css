@@ -1,0 +1,320 @@
+* {
+    font-family: "Roboto", "Parisienne";
+}
+
+:root {
+    --silver: #C0C0C0;
+    --champagne: #F7E7CE;
+    --pine-teal: #344E41;
+    --deep-mocha: #40332B;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #40332B;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4px;
+}
+
+header span {
+    font-size: 1.5rem;
+    color: #40332B;
+    font-family: "Parisienne";
+}
+
+main {
+    font-family: "Roboto";
+}
+
+.navigation {
+    background-color: #F7E7CE;
+    color: #344E41;
+}
+
+.navigation.show {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #373f4e;
+    text-align: center;
+    padding: 1rem;
+    display: block;
+    font-weight: bold
+}
+
+a:hover {
+    text-decoration: overline;
+}
+
+.active {
+    color: #6A2B3F;
+}
+
+footer {
+    background-color: #f7e7ce96;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    column-gap: 12px;
+    justify-content: center;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #63728e54 solid 1px;
+    width: 15px;
+    height: 15px;
+    border-radius: 6px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #f7e7ce;
+}
+
+
+.hamburguer {
+    background: none;
+    border: none;
+    color: #63728E;
+    cursor: pointer
+}
+
+.hamburguer::before {
+    content: "\2630";
+}
+
+.hamburguer.show::before {
+    content: "\00D7"
+}
+
+.navigation {
+    display: none;
+    background-color: #C0C0C0;
+}
+
+.navigation.show {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #344E41;
+    text-align: center;
+    padding: 1rem;
+    display: block;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: overline;
+}
+
+.active {
+    color: #C0C0C0;
+}
+
+footer {
+    background-color: #C0C0C0;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    column-gap: 12px;
+    justify-content: center;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #344e417c solid 1px;
+    width: 15px;
+    height: 15px;
+    border-radius: 6px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #f7e7ce;
+}
+
+form {
+    background-color: #f7e7ce96;
+    padding: .3rem;
+}
+
+h1,
+h2 {
+    margin-left: 2rem;
+    color: #344E41;
+}
+
+fieldset {
+    border: none;
+    margin: 1rem 0;
+    font-size: 18px;
+}
+
+legend {
+    color: #344E41;
+    padding: .5rem;
+}
+
+
+input {
+    border-left: 4px solid #344E41;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+label {
+    padding-top: 1rem;
+    display: block;
+}
+
+.radio {
+    display: grid;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+}
+
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #ffffff94;
+    box-shadow: 0 0 3rem #777;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.589);
+}
+
+dialog button {
+    padding: .5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.788);
+    cursor: pointer;
+}
+
+#dialogBox {
+    padding: 1em;
+    max-width: 40ch;
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / 30%);
+    line-height: 1.5;
+}
+
+dialog[open] {
+    background-color: #40332B;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+#submit {
+    background-color: #344E41;
+    width: 100%;
+    max-width: 400px;
+    padding: .7rem;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.301);
+}
+
+.membership {
+    display: grid;
+    max-width: 400px;
+    gap: .3rem;
+    border-radius: 0 20px 0 20px;
+}
+
+.membership>div {
+    background-color: #344E41;
+    color: white;
+    margin: 5px;
+    padding: .5rem;
+    border-radius: 0 20px 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3rem;
+    margin-left: 2rem;
+    animation: fadeColor 10s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeColor {
+    from {
+        background-color: #344e4128;
+    }
+
+    to {
+        background-color: #344E41;
+    }
+}
+
+.membership button {
+    width: 100px;
+    background-color: #40332B;
+    color: white;
+    padding: .5rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+
+    <meta property="og:title" content="Facebook">
+    <meta property="og:description" content="In this page you can connect with friends and share moments of your life with others. Explore everything Facebook has to offer.
+        .">
+    <link rel="icon" href="images/favicon-final.ico">
+    <meta property="og:image" content="https://karenmahr.github.io/wdd231/chamber/images/facebook.png" />
+    <meta property="og:url" content="https://karenmahr.github.io/wdd231/chamber/index.html">
+
+    <meta name="author" content="Karen Mahr">
+    <meta name="purpose"
+        content="The purpose of the page is for everyone to enjoy this joyful time by following cooking and decoration ideas provided in this page.">
+    <meta name="scenarios">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Form One sophisticated Christmas</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/pine.svg" alt="Site Logo" width="24" height="24">
+        <span>One sophisticated Christmas</span>
+        <button id="nav-button" class="hamburguer" aria-label="navigation"></button>
+    </header>
+    
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="https://karenmahr.github.io/wdd231/final/home.html">Home</a></li>
+            <li><a href="https://karenmahr.github.io/wdd231/final/decoration.html">Decoration</a></li>
+            <li><a href="https://karenmahr.github.io/wdd231/final/cooking.html">Cooking</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Join</h1>
+
+        <div class="section">
+
+            <div class="form">
+                <h2>Membership Application Form</h2>
+
+                <form method="get" action="thankyou.html">
+
+                    <label>First Name *<input type="text" id="first" name="first" autocomplete="given-name"
+                            title="first" required></label>
+                    <label>Last Name *<input type="text" id="last" name="last" autocomplete="family-name" title="last"
+                            required></label>
+
+                    <label>Email address *<input type="email" id="email" name="email" autocomplete="email"
+                            placeholder="someone@example.com" required title="email"></label>
+
+                    <label>Mobile Phone Number *<input type="tel" id="phone" name="phone" autocomplete="tel"
+                            title="phone" required></label>
+
+                    <div class="radio">
+                        <h3>Membership Level</h3>
+                        <label><input type="radio" id="np" name="level" value="np"> Full access</label>
+                        <label><input type="radio" id="bronze" name="level" value="bronze"> Limited access </label>
+                    </div>
+                    <button id="submit" type="submit" value="Submit">Apply for Membership</button>
+                </form>
+            </div>
+
+            <div class="membership">
+                <h2>Membership Levels</h2>
+                <div class="np">
+                    <p>Full access</p>
+                    <button id="openButton1">Learn more</button>
+                </div>
+                <div class="bronze">
+                    <p>Limited access<p>
+                    <button id="openButton2">Learn more</button>
+                </div>
+            </div>
+
+        <dialog id="dialogBox">
+            <div></div>
+            <button id="closeButton">Close</button>
+        </dialog>
+
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/karenmahr" target="_blank"><img src="images/github.svg" alt="Github" width="512"
+                    height="512"></a>
+            <a href="https://www.linkedin.com/in/karen-mahr/" target="_blank"><img src="images/linkedin.svg"
+                    alt="Linkedin" width="512" height="512"></a>
+            <a href="https://www.facebook.com/karen.mahr/?locale=es_LA" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="512" height="512"></a>
+            <a href="https://www.instagram.com/karenmahr/" target="_blank"><img src="images/instagram.svg"
+                    alt="Instagram" width="512" height="512"></a>
+        </div>
+        <p>© <span id="currentyear"></span> Karen Mahr Argentina</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

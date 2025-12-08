@@ -55,27 +55,24 @@ const displayReceipts = (receipts) => {
     });
 }
 
-
 function setFilter(filterName) {
     localStorage.setItem("selectedFilter", filterName);
 }
 
-const appetizer = document.createElement("button");
-appetizer.textContent = 'Appetizer';
+const appetizer = document.querySelector("#appetizer");
+const dessert = document.querySelector("#dessert");
+const main = document.querySelector("#main");
+
 appetizer.addEventListener("click", () => {
     displayReceipts(receipts.filter(receipt => receipt.category.includes("Appetizer")));
     setFilter("appetizer");
 });
 
-const dessert = document.createElement("button");
-dessert.textContent = 'Dessert';
 dessert.addEventListener("click", () => {
     displayReceipts(receipts.filter(receipt => receipt.category.includes("Dessert")));
     setFilter("dessert");
 });
 
-const main = document.createElement("button");
-main.textContent = 'Main Course';
 main.addEventListener("click", () => {
     displayReceipts(receipts.filter(receipt => receipt.category.includes("Main Course")));
     setFilter("main");

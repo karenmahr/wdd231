@@ -1,0 +1,36 @@
+@media only screen and (min-width:38rem) {
+    .hamburguer {
+        display: none;
+    }
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .membership {
+        height: 25rem;
+    }
+
+}
