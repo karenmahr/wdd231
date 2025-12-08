@@ -59,10 +59,4 @@
         height: auto;
         grid-area: photograph;
     }
-
-    /* #cardsHome div p,
-    #cardsReceipts div p {
-        margin-left: 2rem;
-        background-color: aqua;
-    } */
 }
