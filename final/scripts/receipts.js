@@ -1,6 +1,7 @@
 const url = 'data/receipts.json';
 
 const cards = document.querySelector('#cards');
+let receipts = [];
 
 async function getReceiptsData() {
     const response = await fetch(url);
@@ -51,9 +52,8 @@ const displayReceipts = (receipts) => {
         card.appendChild(category)
 
         cards.appendChild(card);
-    })
-};
-
+    });
+}
 function setFilter(filterName) {
     localStorage.setItem("selectedFilter", filterName);
 }

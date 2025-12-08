@@ -1,6 +1,24 @@
 const url = 'data/decorations.json';
 const urlReceipts = 'data/receipts.json';
 
+const navButton = document.querySelector('#nav-button');
+
+navButton.addEventListener('click', () => {
+    navButton.classList.toggle('show');
+    navBar.classList.toggle('show');
+});
+
+const navBar = document.querySelector('#nav-bar');
+
+const today = new Date();
+
+const currentYearSpan = document.querySelector("#currentyear");
+currentYearSpan.textContent = today.getFullYear();
+
+const lastModified = document.querySelector("#lastModified");
+lastModified.textContent = `Last modified: ${document.lastModified}`;
+
+
 const cards = document.querySelector('#cardsHome');
 
 async function spotlightDecorations() {
@@ -39,7 +57,7 @@ const displayDecorations = (decorations) =>
         card.appendChild(image)
         card.appendChild(description)
 
-        cards.appendChild(card);
+        cardsHome.appendChild(card);
     });
 
 const cardsReceipts = document.querySelector('#cardsReceipts');
@@ -81,26 +99,9 @@ const displayReceipts = (receipts) => {
         card.appendChild(description)
 
 
-        cards.appendChild(card);
+        cardsReceipts.appendChild(card);
     })
 };
-
-const navButton = document.querySelector('#nav-button');
-
-navButton.addEventListener('click', () => {
-    navButton.classList.toggle('show');
-    navBar.classList.toggle('show');
-});
-
-const navBar = document.querySelector('#nav-bar');
-
-const today = new Date();
-
-const currentYearSpan = document.querySelector("#currentyear");
-currentYearSpan.textContent = today.getFullYear();
-
-const lastModified = document.querySelector("#lastModified");
-lastModified.textContent = `Last modified: ${document.lastModified}`;
 
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");

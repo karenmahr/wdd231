@@ -1,6 +1,6 @@
 const url = 'data/decorations.json';
 
-const cards = document.querySelector('#cards');
+const cardsDecoration = document.querySelector('#cardsDecoration');
 
 async function getDecorationData() {
     const response = await fetch(url);
@@ -32,8 +32,9 @@ const displayDecorations = (decorations) =>
         card.appendChild(image)
         card.appendChild(description)
 
-        cards.appendChild(card);
+        cardsDecoration.appendChild(card);
     });
+
 
 const navButton = document.querySelector('#nav-button');
 

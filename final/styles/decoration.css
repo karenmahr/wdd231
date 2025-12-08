@@ -153,7 +153,7 @@ footer {
     background-color: #C0C0C0;
 }
 
-#cards div {
+#cardsDecoration div {
     margin: 1rem 8px;
     border-radius: 10px;
     overflow: hidden;
@@ -171,7 +171,7 @@ footer {
         "description description"
 }
 
-#cards div h2 {
+#cardsDecoration div h2 {
     margin: 5px 5px;
     grid-area: title;
     font-size: 30px;
@@ -181,14 +181,14 @@ footer {
     background-color:white;
 }
 
-#cards div p {
+#cardsDecoration div p {
     margin: 5px 5px;
     grid-area: description;
     color: #40332B;
     background-color: white;
 }
 
-#cards div img {
+#cardsDecoration div img {
     width: 100%;
     height: auto;
     grid-area: photograph;
@@ -197,6 +197,6 @@ footer {
     border: 2px solid #40332B;
 }
 
-#cards div img:hover {
+#cardsDecoration div img:hover {
     box-shadow: 0 0 50px #333;
 }
