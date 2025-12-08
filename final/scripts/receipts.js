@@ -6,8 +6,8 @@ let receipts = [];
 async function getReceiptsData() {
     const response = await fetch(url);
     const data = await response.json();
-    receipts = data.receipts; 
-    displayReceipts(receipts);
+    receipts = data.receipts;
+    displayReceipts(data.receipts);
 }
 
 getReceiptsData();
@@ -54,23 +54,28 @@ const displayReceipts = (receipts) => {
         cards.appendChild(card);
     });
 }
+
+
 function setFilter(filterName) {
     localStorage.setItem("selectedFilter", filterName);
 }
 
-const appetizer = document.querySelector("#appetizer");
+const appetizer = document.createElement("button");
+appetizer.textContent = 'Appetizer';
 appetizer.addEventListener("click", () => {
     displayReceipts(receipts.filter(receipt => receipt.category.includes("Appetizer")));
     setFilter("appetizer");
 });
 
-const dessert = document.querySelector("#dessert");
+const dessert = document.createElement("button");
+dessert.textContent = 'Dessert';
 dessert.addEventListener("click", () => {
     displayReceipts(receipts.filter(receipt => receipt.category.includes("Dessert")));
     setFilter("dessert");
 });
 
-const main = document.querySelector("#main");
+const main = document.createElement("button");
+main.textContent = 'Main Course';
 main.addEventListener("click", () => {
     displayReceipts(receipts.filter(receipt => receipt.category.includes("Main Course")));
     setFilter("main");
