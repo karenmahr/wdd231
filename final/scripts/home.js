@@ -1,4 +1,6 @@
-const url = 'data/decorations.json';
+import { decorations } from '../data/decorations.mjs'
+console.log(decorations)
+
 const urlReceipts = 'data/receipts.json';
 
 const navButton = document.querySelector('#nav-button');
@@ -21,13 +23,7 @@ lastModified.textContent = `Last modified: ${document.lastModified}`;
 
 const cards = document.querySelector('#cardsHome');
 
-async function spotlightDecorations() {
-    const response = await fetch(url);
-    const data = await response.json();
-    const randomDecorations = getRandomDecorations(data.decorations, 2);
-    displayDecorations(randomDecorations);
-}
-spotlightDecorations();
+
 
 function getRandomDecorations(decorations, count) {
     const shuffled = decorations.sort(() => 0.5 - Math.random());
@@ -57,8 +53,14 @@ const displayDecorations = (decorations) =>
         card.appendChild(image)
         card.appendChild(description)
 
-        cardsHome.appendChild(card);
+        cards.appendChild(card);
     });
+
+function spotlightDecorations() {
+    const randomDecorations = getRandomDecorations(decorations, 2);
+    displayDecorations(randomDecorations);
+}
+spotlightDecorations();
 
 const cardsReceipts = document.querySelector('#cardsReceipts');
 

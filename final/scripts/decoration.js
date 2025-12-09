@@ -1,13 +1,7 @@
-const url = 'data/decorations.json';
+import { decorations } from '../data/decorations.mjs'
+console.log(decorations)
 
 const cardsDecoration = document.querySelector('#cardsDecoration');
-
-async function getDecorationData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    displayDecorations(data.decorations);
-}
-getDecorationData();
 
 const displayDecorations = (decorations) =>
     decorations.forEach((decoration) => {
@@ -34,7 +28,7 @@ const displayDecorations = (decorations) =>
 
         cardsDecoration.appendChild(card);
     });
-
+displayDecorations(decorations);
 
 const navButton = document.querySelector('#nav-button');
 

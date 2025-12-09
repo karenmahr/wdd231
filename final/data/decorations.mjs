@@ -1,0 +1,42 @@
+export const decorations = [
+        {
+            "title": "Lights",
+            "description": "Use lights to create a warm and festive atmosphere throughout your home. Place them around windows, trees, or shelves to highlight key areas.",
+            "imageurl": "images/lights.webp"
+        },
+        {
+            "title": "Macrame",
+            "description": "Incorporate macrame pieces as natural, handmade accents during the holiday season. They add texture and warmth, pairing beautifully with greenery, candles, or rustic ornaments.",
+            "imageurl": "images/macrame.webp"
+        },
+        {
+            "title": "Personal Touches",
+            "description": "Add personal touches like handmade ornaments, photos, or meaningful keepsakes to make your holiday décor feel unique. These small details create a warm, inviting environment that reflects your personality.",
+            "imageurl": "images/personal.webp"
+        },
+        {
+            "title": "Less is More",
+            "description": "Embrace a minimalist approach by choosing a few statement decorations instead of overwhelming the space. This keeps your home feeling clean, elegant, and visually balanced during the holidays.",
+            "imageurl": "images/minimalism.webp"
+        },
+        {
+            "title": "Assign a Place",
+            "description": "Designate a specific place for each decoration to maintain order and harmony. This helps create a cohesive holiday look and prevents clutter from building up.",
+            "imageurl": "images/assign-place.webp"
+        },
+        {
+            "title": "Use a collor pallete",
+            "description": "Choose a consistent color palette to unify all your holiday decorations. Using matching tones makes your décor look intentional, stylish, and visually coordinated.",
+            "imageurl": "images/collor-pallete.webp"
+        },
+        {
+            "title": "Storage",
+            "description": "Organize your holiday décor with proper storage to keep everything protected and easy to find next year. Labeling boxes and grouping items by category helps simplify future decorating.",
+            "imageurl": "images/storage.webp"
+        },
+        {
+            "title": "Use available resources",
+            "description": "Make the most of what you already have to enhance your Christmas atmosphere. If you have a TV, play a festive YouTube video with music and visuals; if you have speakers, put on Christmas songs.",
+            "imageurl": "images/tv.webp"
+        }
+    ]
