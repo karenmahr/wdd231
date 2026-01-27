@@ -6,6 +6,10 @@
 
 *{
     font-family:"Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: small;
 }
 
 header {
@@ -47,6 +51,8 @@ header span {
 .navigation {
     display: none;
     background-color: #f7e7ce96;
+    height: 35px;
+    
 }
 
 .navigation.show {
@@ -63,7 +69,8 @@ a {
     text-align: center;
     padding: 1rem;
     display: block;
-    font-weight: bold
+    font-weight: bold;
+    font-size: smaller;
 }
 
 a:hover {
@@ -106,7 +113,9 @@ footer {
 }
 
 main{
-    margin:.5rem;
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 700px;
 }
 
 h1{
@@ -115,21 +124,24 @@ h1{
 }
 
 h2{
-    background-color: #63728E;
-    color:white;
+    color:#63728E;
     text-align: center;
     padding:.3rem;
     margin:0;
+    border-bottom: 1px solid #63728E;
 }
 
 section{
-    border-top: solid 14px white;
+    border-top: solid 14px white; 
 }
 
 .first,
 .second{
     background-color: #f7e7ce96;
     border-bottom: 10px solid white;
+    border: #63728E solid 1px;
+    border-radius: 20px;
+    text-align: center;
 }
 
 #text{
@@ -142,7 +154,7 @@ section{
 }
 
 section img{
-    width: 250px;
+    width: 150px;
     height:auto;
     padding:.7rem;
     border-radius: 15px;
@@ -177,6 +189,7 @@ button{
     text-align: center;
     border: solid 1px black;
     margin: 5px 0;
+    border-radius: 10px 0px 10px 0px;
 }
 
 .courseCard.incomplete,
@@ -189,11 +202,13 @@ button{
 }
 
 .courseCard.completed{
-    background-Color:#6A2B3F;
+    background-Color:#6a2b3fe7;
+    border-radius: 5px;
 }
 
 .courseCard.incomplete{
     background-color: #63728ed0;
+    border-radius: 5px;
 }
 
 #courses{
@@ -223,5 +238,4 @@ dialog button {
     padding: .5rem 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
 }
-
 
