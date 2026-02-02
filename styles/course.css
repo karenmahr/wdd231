@@ -155,7 +155,7 @@ section{
 }
 
 section img{
-    width: 150px;
+    width: 100%;
     height:auto;
     padding:.7rem;
     border-radius: 15px;
